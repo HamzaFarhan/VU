@@ -1,1 +1,1 @@
-Go through `vu.ipynb`.
+Go through `vu.ipynb`
