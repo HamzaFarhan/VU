@@ -1,0 +1,5 @@
+{
+  "id": "11",
+  "problem": "Find the average rate of change of the function over the given interval: f(x) = x^2; [2, 4]",
+  "solution": "Average rate of change = (f(4) - f(2)) / (4 - 2) = (16 - 4) / 2 = 6"
+}

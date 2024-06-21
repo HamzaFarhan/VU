@@ -1,0 +1,5 @@
+{
+  "id": "6",
+  "problem": "Calculate d/dx of y = x^3 * cos(x)",
+  "solution": "y' = 3x^2 * cos(x) - x^3 * sin(x) (using product rule)"
+}

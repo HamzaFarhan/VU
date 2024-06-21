@@ -1,0 +1,5 @@
+{
+  "id": "19",
+  "problem": "Find the average rate of change of the function over the given interval: y = 2/(x - 1); [2, 6]",
+  "solution": "Average rate of change = (2/(6-1) - 2/(2-1)) / (6 - 2) = (2/5 - 2) / 4 = -9/20"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "91",
+  "problem": "Simplify: $\\frac{2^{n+4} - 2(2^n)}{2(2^{n+3})}$. Express your answer as a common fraction.",
+  "solution": "Note that $\\frac{2^{n+4} - 2(2^n)}{2(2^{n+3})} = \\frac{2^n}{2^n}\\cdot\\frac{2^4 - 2}{2(2^3)} = \\boxed{\\frac{7}{8}}$."
+}

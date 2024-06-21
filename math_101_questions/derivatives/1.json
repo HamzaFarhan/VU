@@ -1,0 +1,5 @@
+{
+  "id": "1",
+  "problem": "Find the derivative of f(x) = 3x^2 - 2x + 1",
+  "solution": "f'(x) = 6x - 2 (using power rule and constant rule)"
+}

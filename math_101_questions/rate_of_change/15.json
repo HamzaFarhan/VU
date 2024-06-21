@@ -1,0 +1,5 @@
+{
+  "id": "15",
+  "problem": "Find the average rate of change of the function over the given interval: f(x) = x^2 + 1; [-2, 2]",
+  "solution": "Average rate of change = ((2^2 + 1) - ((-2)^2 + 1)) / (2 - (-2)) = (5 - 5) / 4 = 0"
+}

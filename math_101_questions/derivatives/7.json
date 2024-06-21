@@ -1,0 +1,5 @@
+{
+  "id": "7",
+  "problem": "Find the derivative of f(x) = (x^2 + 1) / (x - 2)",
+  "solution": "f'(x) = ((x - 2)(2x) - (x^2 + 1)(1)) / (x - 2)^2 (using quotient rule)"
+}

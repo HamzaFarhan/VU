@@ -1,0 +1,5 @@
+{
+  "id": "1982",
+  "problem": "Express $\\sin 4x + \\sin 6x$ as a product of trigonometric functions.",
+  "solution": "By sum-to-product,\n\\[\\sin 4x + \\sin 6x = \\boxed{2 \\sin 5x \\cos x}.\\]"
+}

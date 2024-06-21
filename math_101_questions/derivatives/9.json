@@ -1,0 +1,5 @@
+{
+  "id": "9",
+  "problem": "Find the derivative of f(x) = tan(x)",
+  "solution": "f'(x) = sec^2(x) (using the derivative rule for tangent function)"
+}

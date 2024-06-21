@@ -1,0 +1,5 @@
+{
+  "id": "951",
+  "problem": "A square has two diagonals, and a convex pentagon has five diagonals.  How many diagonals does a convex decagon have?",
+  "solution": "A convex $n$-gon has $\\frac{n(n-3)}{2}$ diagonals. Thus, a convex decagon has $\\frac{10\\cdot 7}{2} = \\boxed{35}$ diagonals."
+}

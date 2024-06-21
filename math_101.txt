@@ -1,0 +1,12 @@
+Introduction to Coordinates, Graphs and Lines
+Basic concepts of Distance, circles and Quadratic Equations
+Function, its operations and Graphs
+Introduction to limit and its computational techniques
+Continuity and its application for different functions
+Tangent Line, Rate of Change and Derivatives 
+Applications of Derivatives of different functions using different techniques 
+Newton’s Method , Rolle’s Theorem and Mean Value Theorem
+Introduction to Integration and Area problem with its applications
+L’Hopital’s Rule
+Introduction to Sequence and Series its computational techniques
+Convergence Test for sequence and series

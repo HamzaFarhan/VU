@@ -1,0 +1,5 @@
+{
+  "id": "8",
+  "problem": "Determine d/dx of y = sqrt(x)",
+  "solution": "y' = 1 / (2sqrt(x)) (using power rule with fractional exponent)"
+}

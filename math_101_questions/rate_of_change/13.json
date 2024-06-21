@@ -1,0 +1,5 @@
+{
+  "id": "13",
+  "problem": "Find the average rate of change of the function over the given interval: f(x) = x^2 - 2x; [0, 4]",
+  "solution": "Average rate of change = ((4^2 - 2(4)) - (0^2 - 2(0))) / (4 - 0) = (8 - 0) / 4 = 6"
+}

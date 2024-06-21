@@ -1,0 +1,5 @@
+{
+  "id": "14",
+  "problem": "Find the average rate of change of the function over the given interval: f(x) = x^2 - 4x; [-1, 3]",
+  "solution": "Average rate of change = ((3^2 - 4(3)) - ((-1)^2 - 4(-1))) / (3 - (-1)) = (-3 - 5) / 4 = 2"
+}

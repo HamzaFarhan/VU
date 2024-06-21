@@ -1,0 +1,5 @@
+{
+  "id": "357",
+  "problem": "If $|x-2|=p$, where $x<2$, then what is $x-p$ in terms of $p$?",
+  "solution": "Since $x<2$, it follows that $|x-2|=2-x$. If $2-x=p$, then $x=2-p$. Thus $x-p=\\boxed{2-2p}$."
+}

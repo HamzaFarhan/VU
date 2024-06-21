@@ -1,0 +1,5 @@
+{
+  "id": "2",
+  "problem": "Calculate the derivative of y = sin(x)",
+  "solution": "y' = cos(x) (using the derivative rule for sine function)"
+}

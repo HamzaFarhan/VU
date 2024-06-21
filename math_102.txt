@@ -1,0 +1,13 @@
+Set, its different representations and types of sets
+Complex numbers their addition, subtraction, multiplication and division and Modulus of a complex number
+Mapping and their types, function and their types, composite and inverse of a function, addition, subtraction, multiplication and division of functions
+Quadratic functions and quadratic formula with the types of solutions
+Matrices with their addition, subtraction  and multiplication , finding the inverse of a matrix using augmented matrix and co-factors. Application of matrices in solving system of linear equations, Crammer rule Determinants
+Arithmetic and Geometric Sequence with their nth terms and Series sum.
+Permutations and Combinations with their applications on some real life scenarios
+Binomial theorem and its applications in generalizing the formulas for higher powers 
+In coordinate geometry find  the distance between two points, the slope of a line,condition for parallel and perpendicular lines,
+Circle and equation of circle
+Graphs of basic trigonometric functions, periodicity of sine and cosine functions, trigonometric identities and their applications to solve a trigonometric equation, Sum and Difference Formulas , Double Angle Formulas 
+Statistics and its contribution in our life, types of statistics, measurement scales, 
+Data Representation to analyse and find Measures of Central Tendency , Measures of Dispersion, Partial Fractions and Trigonometric Identities
