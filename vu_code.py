@@ -146,16 +146,16 @@ def create_topics(
     topics_file: str | Path = "",
 ) -> Topics:
     topic_system = f"""\
-    {SYSTEM_PREFIX}
-    You'll be given a topic description from a course outline and you have to generate a {MIN_WORDS}-{MAX_WORDS} word topic name that encapsulates the description.
-    Then, generate {MIN_SUBTOPICS}-{MAX_SUBTOPICS} subtopics for the topic. Also {MIN_WORDS}-{MAX_WORDS} words each.
-    Then for each subtopic, generate {MIN_CONCEPTS}-{MAX_CONCEPTS} concepts. Also {MIN_WORDS}-{MAX_WORDS} words each. The concepts should be related to the subtopic.
-    Think of concepts as the smallest unit of knowledge that can be taught from the subtopic. And add a verb to the concept to make it actionable.
-    For example:
-    "Calculate Derivatives" instead of "Derivatives".
-    "Identify Finite Sets" instead of "Finite Sets".
-    "Find the y-intercept" instead of "y-intercept".
-    The subtopics and concepts should be in the correct order.
+{SYSTEM_PREFIX}
+You'll be given a topic description from a course outline and you have to generate a {MIN_WORDS}-{MAX_WORDS} word topic name that encapsulates the description.
+Then, generate {MIN_SUBTOPICS}-{MAX_SUBTOPICS} subtopics for the topic. Also {MIN_WORDS}-{MAX_WORDS} words each.
+Then for each subtopic, generate {MIN_CONCEPTS}-{MAX_CONCEPTS} concepts. Also {MIN_WORDS}-{MAX_WORDS} words each. The concepts should be related to the subtopic.
+Think of concepts as the smallest unit of knowledge that can be taught from the subtopic. And add a verb to the concept to make it actionable.
+For example:
+"Calculate Derivatives" instead of "Derivatives".
+"Identify Finite Sets" instead of "Finite Sets".
+"Find the y-intercept" instead of "y-intercept".
+The subtopics and concepts should be in the correct order.
     """
     topics = Topics()
     if isinstance(outline, str):
@@ -220,16 +220,16 @@ def human_json_to_topics_json(human_file: str | Path) -> Path:
 
 def create_subquestions(question: Question, model: ModelName = ModelName.GPT_4O):
     system = """
-    You are world class math instructor.
-    You will be given a problem and its solution and your job is to break down the solution into steps and explain each step in detail.
-    I will be using your steps as a transcript for text-to-speech. So, make sure the steps are in plain English and easy to understand.
-    The text-to-speech model would get confused by back slashes and other symbols. So, make sure to remove them.
-    For example, instead of writing $x^2$, write x squared. For fractions, write x over y. etc. No brackets or other symbols.
-    For math operations, wrtie plus, minus, times, divided by, etc. instead of +, -, *, /, etc.
-    If a number is -5, write negative 5. If a number is 2.5, write 2 point 5.
-    But make sure to not lose the meaning of the math expression. A student should be able to understand the math expression from the text-to-speech.
-    No more than 5 steps per problem.
-    Make sure the final answer is included in the last step.
+You are world class math instructor.
+You will be given a problem and its solution and your job is to break down the solution into steps and explain each step in detail.
+I will be using your steps as a transcript for text-to-speech. So, make sure the steps are in plain English and easy to understand.
+The text-to-speech model would get confused by back slashes and other symbols. So, make sure to remove them.
+For example, instead of writing $x^2$, write x squared. For fractions, write x over y. etc. No brackets or other symbols.
+For math operations, wrtie plus, minus, times, divided by, etc. instead of +, -, *, /, etc.
+If a number is -5, write negative 5. If a number is 2.5, write 2 point 5.
+But make sure to not lose the meaning of the math expression. A student should be able to understand the math expression from the text-to-speech.
+No more than 5 steps per problem.
+Make sure the final answer is included in the last step.
     """
 
     messages = [
@@ -360,9 +360,9 @@ def assign_questions(
     ]
 
     questions_system = f"""\
-    {SYSTEM_PREFIX}
-    You'll be given the problem and solution of a question and list of topic_subtopic_concept objects.
-    Based on your knowledge of math, you have to decide which topic_subtopic_concept the question belongs to.
+{SYSTEM_PREFIX}
+You'll be given the problem and solution of a question and list of topic_subtopic_concept objects.
+Based on your knowledge of math, you have to decide which topic_subtopic_concept the question belongs to.
     """
     num_questions = num_questions or len(questions)
     used_index = assigned_questions["used"]
@@ -438,10 +438,10 @@ def add_dependencies(
     assert topics, "Topics must be provided."
 
     prereq_system = f"""\
-    {SYSTEM_PREFIX}
-    You'll be given a question with a problem and solution and a list of other questions.
-    Based on your knowledge of math, you have to decide which question form the list is a prerequisite to the given question.
-    Just one question. If none are a prerequisite, or if the question is super easy for a highschooler, select 'None'.
+{SYSTEM_PREFIX}
+You'll be given a question with a problem and solution and a list of other questions.
+Based on your knowledge of math, you have to decide which question form the list is a prerequisite to the given question.
+Just one question. If none are a prerequisite, or if the question is super easy for a highschooler, select 'None'.
     """
     prerequisites_file = Path(prerequisities_file).with_suffix(".json")
     prerequisites = (
@@ -489,6 +489,7 @@ def add_dependencies(
                 if topics_file:
                     with open(Path(topics_file).with_suffix(".json"), "w") as f:
                         json.dump(topics.model_dump(), f, indent=2)
+                print(f"Added prerequisite {prereq_id} to {question.id}")
             prerequisites[question.id] = prereq_id
             with open(prerequisities_file, "w") as f:
                 json.dump(prerequisites, f, indent=2)
