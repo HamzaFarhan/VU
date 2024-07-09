@@ -434,10 +434,7 @@ class Concept(Node):
         if not isinstance(questions, list):
             questions = [questions]
         for question in questions:
-            subquestions = (
-                question.subquestions if isinstance(question, Question) else []
-            )
-            question = Question(
+            new_question = Question(
                 topic=self.topic,
                 subtopic=self.subtopic,
                 concept=self.concept,
@@ -445,8 +442,12 @@ class Concept(Node):
                 solution=question.solution,
                 question_number=len(self.questions) + 1,
             )
-            question.subquestions = subquestions
-            self.questions[question.id] = question
+            if isinstance(question, Question):
+                new_question.subquestions = question.subquestions
+                new_question.difficulty = question.difficulty
+                new_question.code = question.code
+
+            self.questions[new_question.id] = new_question
 
 
 class BaseQuestion(BaseModel):
@@ -477,3 +478,16 @@ class Question(Node, BaseQuestion):
         for i, subquestion in enumerate(self.subquestions, start=1):
             question_str += f"\n\n{dict_to_xml({f'subquestion_{i}': subquestion})}"
         return question_str.strip()
+
+
+"""
+We will get a file of topics.json where each topic will have subtopics and each subtopic will have concepts and each concept will have questions.
+Each question will have a problem, solution, subquestions, and code to generate the question and subquestions with random variables.
+Each topic, subtopic, concept, and question will also have prerequisites and postrequisites.
+The prerequisites and postrequisites will be assigned on the question level in the add_dependencies function and then automatically updated for the concept, subtopic, and topic levels.
+So if we assign question 1 of concept 1 of subtopic 1 of topic 1 as a prerequisite for question 2 of concept 2 of subtopic 2 of topic 2, then concept 1 of subtopic 1 of topic 1 will be a prerequisite for concept 2 of subtopic 2 of topic 2, subtopic 1 of topic 1 will be a prerequisite for subtopic 2 of topic 2, and topic 1 will be a prerequisite for topic 2.
+We will load the file as a Topics object and then everything can be accessed by either name or numbered notation.
+So question 3 of concept 2 of subtopic 1 of topic 1 can be accessed with topics.get("<topic1_name>_<subtopic1_name>_<concept2_name>_3") or topics.get("1.1.2.3")
+The same for concepts, subtopics, and topics. So just topics.get("2.3") means subtopic 3 of topic 2.
+And we already have a subtopic, we can do subtopic.get("3.5") to get question 5 of concept 3 of that subtopic.
+"""
