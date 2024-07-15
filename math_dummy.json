@@ -1,0 +1,473 @@
+{
+  "topics": {
+    "Algebra": {
+      "topic": "Algebra",
+      "prerequisite_ids": [],
+      "postrequisite_ids": [
+        "Geometry"
+      ],
+      "subtopics": {
+        "Algebra_Subtopic 1": {
+          "topic": "Algebra",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [
+            "Geometry_Subtopic 1"
+          ],
+          "subtopic": "Subtopic 1",
+          "concepts": {
+            "Algebra_Subtopic 1_Concept 1": {
+              "topic": "Algebra",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [
+                "Geometry_Subtopic 1_Concept 2"
+              ],
+              "subtopic": "Subtopic 1",
+              "concept": "Concept 1",
+              "questions": {
+                "Algebra_Subtopic 1_Concept 1_1": {
+                  "problem": "Problem for Algebra, Subtopic 1, Concept 1, Question 1",
+                  "solution": "Solution for Algebra, Subtopic 1, Concept 1, Question 1",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [
+                    "Geometry_Subtopic 1_Concept 2_2"
+                  ],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 1",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Algebra_Subtopic 1_Concept 1_2": {
+                  "problem": "Problem for Algebra, Subtopic 1, Concept 1, Question 2",
+                  "solution": "Solution for Algebra, Subtopic 1, Concept 1, Question 2",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 1",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Algebra_Subtopic 1_Concept 1_3": {
+                  "problem": "Problem for Algebra, Subtopic 1, Concept 1, Question 3",
+                  "solution": "Solution for Algebra, Subtopic 1, Concept 1, Question 3",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 1",
+                  "question_number": 3,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Algebra_Subtopic 1_Concept 2": {
+              "topic": "Algebra",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Subtopic 1",
+              "concept": "Concept 2",
+              "questions": {
+                "Algebra_Subtopic 1_Concept 2_1": {
+                  "problem": "Problem for Algebra, Subtopic 1, Concept 2, Question 1",
+                  "solution": "Solution for Algebra, Subtopic 1, Concept 2, Question 1",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 2",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Algebra_Subtopic 1_Concept 2_2": {
+                  "problem": "Problem for Algebra, Subtopic 1, Concept 2, Question 2",
+                  "solution": "Solution for Algebra, Subtopic 1, Concept 2, Question 2",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 2",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Algebra_Subtopic 1_Concept 2_3": {
+                  "problem": "Problem for Algebra, Subtopic 1, Concept 2, Question 3",
+                  "solution": "Solution for Algebra, Subtopic 1, Concept 2, Question 3",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 2",
+                  "question_number": 3,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Algebra_Subtopic 2": {
+          "topic": "Algebra",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [
+            "Geometry_Subtopic 2"
+          ],
+          "subtopic": "Subtopic 2",
+          "concepts": {
+            "Algebra_Subtopic 2_Concept 1": {
+              "topic": "Algebra",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Subtopic 2",
+              "concept": "Concept 1",
+              "questions": {
+                "Algebra_Subtopic 2_Concept 1_1": {
+                  "problem": "Problem for Algebra, Subtopic 2, Concept 1, Question 1",
+                  "solution": "Solution for Algebra, Subtopic 2, Concept 1, Question 1",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 1",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Algebra_Subtopic 2_Concept 1_2": {
+                  "problem": "Problem for Algebra, Subtopic 2, Concept 1, Question 2",
+                  "solution": "Solution for Algebra, Subtopic 2, Concept 1, Question 2",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 1",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Algebra_Subtopic 2_Concept 1_3": {
+                  "problem": "Problem for Algebra, Subtopic 2, Concept 1, Question 3",
+                  "solution": "Solution for Algebra, Subtopic 2, Concept 1, Question 3",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 1",
+                  "question_number": 3,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Algebra_Subtopic 2_Concept 2": {
+              "topic": "Algebra",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [
+                "Geometry_Subtopic 2_Concept 1"
+              ],
+              "subtopic": "Subtopic 2",
+              "concept": "Concept 2",
+              "questions": {
+                "Algebra_Subtopic 2_Concept 2_1": {
+                  "problem": "Problem for Algebra, Subtopic 2, Concept 2, Question 1",
+                  "solution": "Solution for Algebra, Subtopic 2, Concept 2, Question 1",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 2",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Algebra_Subtopic 2_Concept 2_2": {
+                  "problem": "Problem for Algebra, Subtopic 2, Concept 2, Question 2",
+                  "solution": "Solution for Algebra, Subtopic 2, Concept 2, Question 2",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [
+                    "Geometry_Subtopic 2_Concept 1_1"
+                  ],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 2",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Algebra_Subtopic 2_Concept 2_3": {
+                  "problem": "Problem for Algebra, Subtopic 2, Concept 2, Question 3",
+                  "solution": "Solution for Algebra, Subtopic 2, Concept 2, Question 3",
+                  "topic": "Algebra",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 2",
+                  "question_number": 3,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Geometry": {
+      "topic": "Geometry",
+      "prerequisite_ids": [
+        "Algebra"
+      ],
+      "postrequisite_ids": [],
+      "subtopics": {
+        "Geometry_Subtopic 1": {
+          "topic": "Geometry",
+          "prerequisite_ids": [
+            "Algebra_Subtopic 1"
+          ],
+          "postrequisite_ids": [
+            "Geometry_Subtopic 2"
+          ],
+          "subtopic": "Subtopic 1",
+          "concepts": {
+            "Geometry_Subtopic 1_Concept 1": {
+              "topic": "Geometry",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Subtopic 1",
+              "concept": "Concept 1",
+              "questions": {
+                "Geometry_Subtopic 1_Concept 1_1": {
+                  "problem": "Problem for Geometry, Subtopic 1, Concept 1, Question 1",
+                  "solution": "Solution for Geometry, Subtopic 1, Concept 1, Question 1",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 1",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Geometry_Subtopic 1_Concept 1_2": {
+                  "problem": "Problem for Geometry, Subtopic 1, Concept 1, Question 2",
+                  "solution": "Solution for Geometry, Subtopic 1, Concept 1, Question 2",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 1",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Geometry_Subtopic 1_Concept 1_3": {
+                  "problem": "Problem for Geometry, Subtopic 1, Concept 1, Question 3",
+                  "solution": "Solution for Geometry, Subtopic 1, Concept 1, Question 3",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 1",
+                  "question_number": 3,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Geometry_Subtopic 1_Concept 2": {
+              "topic": "Geometry",
+              "prerequisite_ids": [
+                "Algebra_Subtopic 1_Concept 1"
+              ],
+              "postrequisite_ids": [
+                "Geometry_Subtopic 2_Concept 2"
+              ],
+              "subtopic": "Subtopic 1",
+              "concept": "Concept 2",
+              "questions": {
+                "Geometry_Subtopic 1_Concept 2_1": {
+                  "problem": "Problem for Geometry, Subtopic 1, Concept 2, Question 1",
+                  "solution": "Solution for Geometry, Subtopic 1, Concept 2, Question 1",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 2",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Geometry_Subtopic 1_Concept 2_2": {
+                  "problem": "Problem for Geometry, Subtopic 1, Concept 2, Question 2",
+                  "solution": "Solution for Geometry, Subtopic 1, Concept 2, Question 2",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [
+                    "Algebra_Subtopic 1_Concept 1_1"
+                  ],
+                  "postrequisite_ids": [
+                    "Geometry_Subtopic 2_Concept 2_3"
+                  ],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 2",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Geometry_Subtopic 1_Concept 2_3": {
+                  "problem": "Problem for Geometry, Subtopic 1, Concept 2, Question 3",
+                  "solution": "Solution for Geometry, Subtopic 1, Concept 2, Question 3",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 1",
+                  "concept": "Concept 2",
+                  "question_number": 3,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Geometry_Subtopic 2": {
+          "topic": "Geometry",
+          "prerequisite_ids": [
+            "Algebra_Subtopic 2",
+            "Geometry_Subtopic 1"
+          ],
+          "postrequisite_ids": [],
+          "subtopic": "Subtopic 2",
+          "concepts": {
+            "Geometry_Subtopic 2_Concept 1": {
+              "topic": "Geometry",
+              "prerequisite_ids": [
+                "Algebra_Subtopic 2_Concept 2"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Subtopic 2",
+              "concept": "Concept 1",
+              "questions": {
+                "Geometry_Subtopic 2_Concept 1_1": {
+                  "problem": "Problem for Geometry, Subtopic 2, Concept 1, Question 1",
+                  "solution": "Solution for Geometry, Subtopic 2, Concept 1, Question 1",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [
+                    "Algebra_Subtopic 2_Concept 2_2"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 1",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Geometry_Subtopic 2_Concept 1_2": {
+                  "problem": "Problem for Geometry, Subtopic 2, Concept 1, Question 2",
+                  "solution": "Solution for Geometry, Subtopic 2, Concept 1, Question 2",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 1",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Geometry_Subtopic 2_Concept 1_3": {
+                  "problem": "Problem for Geometry, Subtopic 2, Concept 1, Question 3",
+                  "solution": "Solution for Geometry, Subtopic 2, Concept 1, Question 3",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 1",
+                  "question_number": 3,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Geometry_Subtopic 2_Concept 2": {
+              "topic": "Geometry",
+              "prerequisite_ids": [
+                "Geometry_Subtopic 1_Concept 2"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Subtopic 2",
+              "concept": "Concept 2",
+              "questions": {
+                "Geometry_Subtopic 2_Concept 2_1": {
+                  "problem": "Problem for Geometry, Subtopic 2, Concept 2, Question 1",
+                  "solution": "Solution for Geometry, Subtopic 2, Concept 2, Question 1",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 2",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Geometry_Subtopic 2_Concept 2_2": {
+                  "problem": "Problem for Geometry, Subtopic 2, Concept 2, Question 2",
+                  "solution": "Solution for Geometry, Subtopic 2, Concept 2, Question 2",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 2",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Geometry_Subtopic 2_Concept 2_3": {
+                  "problem": "Problem for Geometry, Subtopic 2, Concept 2, Question 3",
+                  "solution": "Solution for Geometry, Subtopic 2, Concept 2, Question 3",
+                  "topic": "Geometry",
+                  "prerequisite_ids": [
+                    "Geometry_Subtopic 1_Concept 2_2"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Subtopic 2",
+                  "concept": "Concept 2",
+                  "question_number": 3,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
