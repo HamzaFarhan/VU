@@ -1,0 +1,2237 @@
+{
+  "topics": {
+    "Understanding Sets": {
+      "topic": "Understanding Sets",
+      "prerequisite_ids": [],
+      "postrequisite_ids": [
+        "Functions And Mappings",
+        "Permutations And Combinations"
+      ],
+      "subtopics": {
+        "Understanding Sets_Set Theory Basics": {
+          "topic": "Understanding Sets",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Set Theory Basics",
+          "concepts": {
+            "Understanding Sets_Set Theory Basics_Set Definitions And Notations": {
+              "topic": "Understanding Sets",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [
+                "Functions And Mappings_Function Basics_Domain, Codomain and Range"
+              ],
+              "subtopic": "Set Theory Basics",
+              "concept": "Set Definitions And Notations",
+              "questions": {
+                "Understanding Sets_Set Theory Basics_Set Definitions And Notations_1": {
+                  "problem": "What is the definition of a set in mathematics?",
+                  "solution": "A set is a well-defined collection of distinct objects.",
+                  "topic": "Understanding Sets",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Set Theory Basics",
+                  "concept": "Set Definitions And Notations",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Understanding Sets_Set Theory Basics_Set Definitions And Notations_2": {
+                  "problem": "What notation is used to denote a set?",
+                  "solution": "Curly brackets {} are used to denote a set, with elements separated by commas.",
+                  "topic": "Understanding Sets",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Set Theory Basics",
+                  "concept": "Set Definitions And Notations",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Understanding Sets_Set Theory Basics_Set Types": {
+              "topic": "Understanding Sets",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Set Theory Basics",
+              "concept": "Set Types",
+              "questions": {
+                "Understanding Sets_Set Theory Basics_Set Types_1": {
+                  "problem": "What is a finite set?",
+                  "solution": "A finite set is a set that has a finite number of elements.",
+                  "topic": "Understanding Sets",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Set Theory Basics",
+                  "concept": "Set Types",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Understanding Sets_Set Theory Basics_Set Types_2": {
+                  "problem": "What is an infinite set? Give an example.",
+                  "solution": "An infinite set is a set with an infinite number of elements. For example, the set of all natural numbers {1, 2, 3, ...} is an infinite set.",
+                  "topic": "Understanding Sets",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Set Theory Basics",
+                  "concept": "Set Types",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Understanding Sets_Set Operations": {
+          "topic": "Understanding Sets",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Set Operations",
+          "concepts": {
+            "Understanding Sets_Set Operations_Union and Intersection": {
+              "topic": "Understanding Sets",
+              "prerequisite_ids": [
+                "Understanding Sets_Set Theory Basics_Set Definitions And Notations"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Set Operations",
+              "concept": "Union and Intersection",
+              "questions": {
+                "Understanding Sets_Set Operations_Union and Intersection_1": {
+                  "problem": "What is the union of two sets A and B?",
+                  "solution": "The union of sets A and B, denoted A ∪ B, is the set of all elements that are in A or in B or in both.",
+                  "topic": "Understanding Sets",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Set Operations",
+                  "concept": "Union and Intersection",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Understanding Sets_Set Operations_Union and Intersection_2": {
+                  "problem": "What is the intersection of two sets A and B?",
+                  "solution": "The intersection of sets A and B, denoted A ∩ B, is the set of all elements that are in both A and B.",
+                  "topic": "Understanding Sets",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Set Operations",
+                  "concept": "Union and Intersection",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Understanding Sets_Set Operations_Venn Diagrams": {
+              "topic": "Understanding Sets",
+              "prerequisite_ids": [
+                "Understanding Sets_Set Operations_Union and Intersection"
+              ],
+              "postrequisite_ids": [
+                "Introduction To Statistics_Data Representation_Venn Diagrams"
+              ],
+              "subtopic": "Set Operations",
+              "concept": "Venn Diagrams",
+              "questions": {
+                "Understanding Sets_Set Operations_Venn Diagrams_1": {
+                  "problem": "What is a Venn diagram?",
+                  "solution": "A Venn diagram is a pictorial representation of the relationships between sets, often using overlapping circles.",
+                  "topic": "Understanding Sets",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Set Operations",
+                  "concept": "Venn Diagrams",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Understanding Sets_Set Operations_Venn Diagrams_2": {
+                  "problem": "In a Venn diagram representing sets A and B, what does the overlapping region represent?",
+                  "solution": "The overlapping region in a Venn diagram of sets A and B represents the intersection of A and B, i.e., elements that are in both sets.",
+                  "topic": "Understanding Sets",
+                  "prerequisite_ids": [
+                    "Understanding Sets_Set Operations_Union and Intersection_2"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Set Operations",
+                  "concept": "Venn Diagrams",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Complex Numbers Operations": {
+      "topic": "Complex Numbers Operations",
+      "prerequisite_ids": [],
+      "postrequisite_ids": ["Quadratic Functions"],
+      "subtopics": {
+        "Complex Numbers Operations_Complex Number Basics": {
+          "topic": "Complex Numbers Operations",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Complex Number Basics",
+          "concepts": {
+            "Complex Numbers Operations_Complex Number Basics_Definition And Notation": {
+              "topic": "Complex Numbers Operations",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Complex Number Basics",
+              "concept": "Definition And Notation",
+              "questions": {
+                "Complex Numbers Operations_Complex Number Basics_Definition And Notation_1": {
+                  "problem": "What is a complex number?",
+                  "solution": "A complex number is a number that can be expressed in the form a + bi, where a and b are real numbers, and i is the imaginary unit defined as the square root of -1.",
+                  "topic": "Complex Numbers Operations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Complex Number Basics",
+                  "concept": "Definition And Notation",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Complex Numbers Operations_Complex Number Basics_Definition And Notation_2": {
+                  "problem": "What is the imaginary unit denoted by and what is its property?",
+                  "solution": "The imaginary unit is denoted by i and it is defined by the property i^2 = -1.",
+                  "topic": "Complex Numbers Operations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Complex Number Basics",
+                  "concept": "Definition And Notation",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Complex Numbers Operations_Complex Number Basics_Real and Imaginary Parts": {
+              "topic": "Complex Numbers Operations",
+              "prerequisite_ids": [
+                "Complex Numbers Operations_Complex Number Basics_Definition And Notation"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Complex Number Basics",
+              "concept": "Real and Imaginary Parts",
+              "questions": {
+                "Complex Numbers Operations_Complex Number Basics_Real and Imaginary Parts_1": {
+                  "problem": "For the complex number z = 3 - 4i, what is the real part?",
+                  "solution": "The real part of the complex number z = 3 - 4i is 3.",
+                  "topic": "Complex Numbers Operations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Complex Number Basics",
+                  "concept": "Real and Imaginary Parts",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Complex Numbers Operations_Complex Number Basics_Real and Imaginary Parts_2": {
+                  "problem": "For the complex number z = 2 + 7i, what is the imaginary part?",
+                  "solution": "The imaginary part of the complex number z = 2 + 7i is 7.",
+                  "topic": "Complex Numbers Operations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Complex Number Basics",
+                  "concept": "Real and Imaginary Parts",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Complex Numbers Operations_Complex Number Arithmetic": {
+          "topic": "Complex Numbers Operations",
+          "prerequisite_ids": [
+            "Complex Numbers Operations_Complex Number Basics"
+          ],
+          "postrequisite_ids": ["Quadratic Functions_Complex Roots"],
+          "subtopic": "Complex Number Arithmetic",
+          "concepts": {
+            "Complex Numbers Operations_Complex Number Arithmetic_Addition and Subtraction": {
+              "topic": "Complex Numbers Operations",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Complex Number Arithmetic",
+              "concept": "Addition and Subtraction",
+              "questions": {
+                "Complex Numbers Operations_Complex Number Arithmetic_Addition and Subtraction_1": {
+                  "problem": "Calculate (3 + 4i) + (1 - 5i).",
+                  "solution": "(3 + 4i) + (1 - 5i) = (3 + 1) + (4 - 5)i = 4 - i.",
+                  "topic": "Complex Numbers Operations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Complex Number Arithmetic",
+                  "concept": "Addition and Subtraction",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Complex Numbers Operations_Complex Number Arithmetic_Addition and Subtraction_2": {
+                  "problem": "Calculate (7 - 2i) - (4 + 3i).",
+                  "solution": "(7 - 2i) - (4 + 3i) = (7 - 4) + (-2 - 3)i = 3 - 5i.",
+                  "topic": "Complex Numbers Operations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Complex Number Arithmetic",
+                  "concept": "Addition and Subtraction",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Complex Numbers Operations_Complex Number Arithmetic_Multiplication and Division": {
+              "topic": "Complex Numbers Operations",
+              "prerequisite_ids": [
+                "Complex Numbers Operations_Complex Number Basics_Definition And Notation"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Complex Number Arithmetic",
+              "concept": "Multiplication and Division",
+              "questions": {
+                "Complex Numbers Operations_Complex Number Arithmetic_Multiplication and Division_1": {
+                  "problem": "Calculate (2 + 3i) * (1 - i).",
+                  "solution": "(2 + 3i) * (1 - i) = 2 * 1 + 2 * (-i) + 3i * 1 + 3i * (-i) = 2 - 2i + 3i + 3 = 5 + i.",
+                  "topic": "Complex Numbers Operations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Complex Number Arithmetic",
+                  "concept": "Multiplication and Division",
+                  "question_number": 1,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Complex Numbers Operations_Complex Number Arithmetic_Multiplication and Division_2": {
+                  "problem": "Calculate (4 - 3i) / (2 + i).",
+                  "solution": "(4 - 3i) / (2 + i) = ((4 - 3i) * (2 - i)) / ((2 + i) * (2 - i)) = (8 - 2i - 6i - 3) / (4 + 1) = (5 - 8i) / 5 = 1 - (8/5)i.",
+                  "topic": "Complex Numbers Operations",
+                  "prerequisite_ids": [
+                    "Complex Numbers Operations_Complex Number Arithmetic_Multiplication and Division_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Complex Number Arithmetic",
+                  "concept": "Multiplication and Division",
+                  "question_number": 2,
+                  "difficulty": "hard",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Functions And Mappings": {
+      "topic": "Functions And Mappings",
+      "prerequisite_ids": ["Understanding Sets"],
+      "postrequisite_ids": ["Sequences And Series"],
+      "subtopics": {
+        "Functions And Mappings_Function Basics": {
+          "topic": "Functions And Mappings",
+          "prerequisite_ids": [],
+          "postrequisite_ids": ["Functions And Mappings_Types Of Functions"],
+          "subtopic": "Function Basics",
+          "concepts": {
+            "Functions And Mappings_Function Basics_Function Definition": {
+              "topic": "Functions And Mappings",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [
+                "Functions And Mappings_Types Of Functions_Injective, Surjective, Bijective"
+              ],
+              "subtopic": "Function Basics",
+              "concept": "Function Definition",
+              "questions": {
+                "Functions And Mappings_Function Basics_Function Definition_1": {
+                  "problem": "What is a function in mathematics?",
+                  "solution": "A function is a relation between a set of inputs (domain) and a set of outputs (codomain) where each input is related to exactly one output.",
+                  "topic": "Functions And Mappings",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Function Basics",
+                  "concept": "Function Definition",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Functions And Mappings_Function Basics_Function Definition_2": {
+                  "problem": "What is the vertical line test and what does it determine?",
+                  "solution": "The vertical line test is a visual way to determine if a curve represents a function. If any vertical line intersects the curve more than once, the curve does not represent a function.",
+                  "topic": "Functions And Mappings",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Function Basics",
+                  "concept": "Function Definition",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Functions And Mappings_Function Basics_Domain, Codomain and Range": {
+              "topic": "Functions And Mappings",
+              "prerequisite_ids": [
+                "Understanding Sets_Set Theory Basics_Set Definitions And Notations"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Function Basics",
+              "concept": "Domain, Codomain and Range",
+              "questions": {
+                "Functions And Mappings_Function Basics_Domain, Codomain and Range_1": {
+                  "problem": "What is the domain of a function?",
+                  "solution": "The domain of a function is the set of all possible input values (x-values) for which the function is defined.",
+                  "topic": "Functions And Mappings",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Function Basics",
+                  "concept": "Domain, Codomain and Range",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Functions And Mappings_Function Basics_Domain, Codomain and Range_2": {
+                  "problem": "What is the difference between the codomain and range of a function?",
+                  "solution": "The codomain of a function is the set of all possible output values, while the range is the set of actual output values. The range is always a subset of the codomain.",
+                  "topic": "Functions And Mappings",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Function Basics",
+                  "concept": "Domain, Codomain and Range",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Functions And Mappings_Types Of Functions": {
+          "topic": "Functions And Mappings",
+          "prerequisite_ids": ["Functions And Mappings_Function Basics"],
+          "postrequisite_ids": [],
+          "subtopic": "Types Of Functions",
+          "concepts": {
+            "Functions And Mappings_Types Of Functions_Injective, Surjective, Bijective": {
+              "topic": "Functions And Mappings",
+              "prerequisite_ids": [
+                "Functions And Mappings_Function Basics_Function Definition"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Types Of Functions",
+              "concept": "Injective, Surjective, Bijective",
+              "questions": {
+                "Functions And Mappings_Types Of Functions_Injective, Surjective, Bijective_1": {
+                  "problem": "What is an injective (one-to-one) function?",
+                  "solution": "An injective function is a function where every element of the codomain is mapped to by at most one element of the domain. In other words, no two distinct elements of the domain map to the same element in the codomain.",
+                  "topic": "Functions And Mappings",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Types Of Functions",
+                  "concept": "Injective, Surjective, Bijective",
+                  "question_number": 1,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Functions And Mappings_Types Of Functions_Injective, Surjective, Bijective_2": {
+                  "problem": "What is a surjective (onto) function?",
+                  "solution": "A surjective function is a function where every element of the codomain is mapped to by at least one element of the domain. In other words, the range and codomain of the function are equal.",
+                  "topic": "Functions And Mappings",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Types Of Functions",
+                  "concept": "Injective, Surjective, Bijective",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Functions And Mappings_Types Of Functions_Even and Odd Functions": {
+              "topic": "Functions And Mappings",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Types Of Functions",
+              "concept": "Even and Odd Functions",
+              "questions": {
+                "Functions And Mappings_Types Of Functions_Even and Odd Functions_1": {
+                  "problem": "What is an even function?",
+                  "solution": "An even function is a function that satisfies the condition f(-x) = f(x) for all x in the domain of f.",
+                  "topic": "Functions And Mappings",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Types Of Functions",
+                  "concept": "Even and Odd Functions",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Functions And Mappings_Types Of Functions_Even and Odd Functions_2": {
+                  "problem": "What is an odd function?",
+                  "solution": "An odd function is a function that satisfies the condition f(-x) = -f(x) for all x in the domain of f.",
+                  "topic": "Functions And Mappings",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Types Of Functions",
+                  "concept": "Even and Odd Functions",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Quadratic Functions": {
+      "topic": "Quadratic Functions",
+      "prerequisite_ids": ["Complex Numbers Operations"],
+      "postrequisite_ids": [],
+      "subtopics": {
+        "Quadratic Functions_Quadratic Equations": {
+          "topic": "Quadratic Functions",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Quadratic Equations",
+          "concepts": {
+            "Quadratic Functions_Quadratic Equations_Standard Form": {
+              "topic": "Quadratic Functions",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [
+                "Quadratic Functions_Solving Quadratic Equations_Factoring"
+              ],
+              "subtopic": "Quadratic Equations",
+              "concept": "Standard Form",
+              "questions": {
+                "Quadratic Functions_Quadratic Equations_Standard Form_1": {
+                  "problem": "What is the standard form of a quadratic equation?",
+                  "solution": "The standard form of a quadratic equation is ax^2 + bx + c = 0, where a, b, and c are real numbers and a ≠ 0.",
+                  "topic": "Quadratic Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Quadratic Equations",
+                  "concept": "Standard Form",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Quadratic Functions_Quadratic Equations_Standard Form_2": {
+                  "problem": "In the standard form of a quadratic equation ax^2 + bx + c = 0, what does the value of a determine about the parabola?",
+                  "solution": "In the standard form ax^2 + bx + c = 0, the value of a determines the direction of the parabola. If a > 0, the parabola opens upward. If a < 0, the parabola opens downward.",
+                  "topic": "Quadratic Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Quadratic Equations",
+                  "concept": "Standard Form",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Quadratic Functions_Quadratic Equations_Vertex Form": {
+              "topic": "Quadratic Functions",
+              "prerequisite_ids": [
+                "Quadratic Functions_Quadratic Equations_Standard Form"
+              ],
+              "postrequisite_ids": ["Coordinate Geometry Basics_Parabolas"],
+              "subtopic": "Quadratic Equations",
+              "concept": "Vertex Form",
+              "questions": {
+                "Quadratic Functions_Quadratic Equations_Vertex Form_1": {
+                  "problem": "What is the vertex form of a quadratic function?",
+                  "solution": "The vertex form of a quadratic function is f(x) = a(x - h)^2 + k, where (h, k) is the vertex of the parabola.",
+                  "topic": "Quadratic Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Quadratic Equations",
+                  "concept": "Vertex Form",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Quadratic Functions_Quadratic Equations_Vertex Form_2": {
+                  "problem": "In the vertex form f(x) = a(x - h)^2 + k, what do h and k represent?",
+                  "solution": "In the vertex form f(x) = a(x - h)^2 + k, h represents the x-coordinate and k represents the y-coordinate of the vertex of the parabola.",
+                  "topic": "Quadratic Functions",
+                  "prerequisite_ids": [
+                    "Quadratic Functions_Quadratic Equations_Vertex Form_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Quadratic Equations",
+                  "concept": "Vertex Form",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Quadratic Functions_Solving Quadratic Equations": {
+          "topic": "Quadratic Functions",
+          "prerequisite_ids": ["Quadratic Functions_Quadratic Equations"],
+          "postrequisite_ids": [],
+          "subtopic": "Solving Quadratic Equations",
+          "concepts": {
+            "Quadratic Functions_Solving Quadratic Equations_Factoring": {
+              "topic": "Quadratic Functions",
+              "prerequisite_ids": [
+                "Quadratic Functions_Quadratic Equations_Standard Form"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Solving Quadratic Equations",
+              "concept": "Factoring",
+              "questions": {
+                "Quadratic Functions_Solving Quadratic Equations_Factoring_1": {
+                  "problem": "What is the first step in solving a quadratic equation by factoring?",
+                  "solution": "The first step in solving a quadratic equation by factoring is to set the equation equal to zero and express it in standard form: ax^2 + bx + c = 0.",
+                  "topic": "Quadratic Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Solving Quadratic Equations",
+                  "concept": "Factoring",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Quadratic Functions_Solving Quadratic Equations_Factoring_2": {
+                  "problem": "After factoring a quadratic equation, how do you find the solutions?",
+                  "solution": "After factoring a quadratic equation into the form (ax + b)(cx + d) = 0, the solutions are found by setting each factor equal to zero and solving for x. This gives the solutions x = -b/a and x = -d/c.",
+                  "topic": "Quadratic Functions",
+                  "prerequisite_ids": [
+                    "Quadratic Functions_Solving Quadratic Equations_Factoring_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Solving Quadratic Equations",
+                  "concept": "Factoring",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Quadratic Functions_Solving Quadratic Equations_Quadratic Formula": {
+              "topic": "Quadratic Functions",
+              "prerequisite_ids": [
+                "Quadratic Functions_Quadratic Equations_Standard Form"
+              ],
+              "postrequisite_ids": ["Quadratic Functions_Complex Roots"],
+              "subtopic": "Solving Quadratic Equations",
+              "concept": "Quadratic Formula",
+              "questions": {
+                "Quadratic Functions_Solving Quadratic Equations_Quadratic Formula_1": {
+                  "problem": "What is the quadratic formula?",
+                  "solution": "The quadratic formula is x = (-b ± √(b^2 - 4ac)) / (2a), where a, b, and c are the coefficients of a quadratic equation in standard form (ax^2 + bx + c = 0).",
+                  "topic": "Quadratic Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Solving Quadratic Equations",
+                  "concept": "Quadratic Formula",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Quadratic Functions_Solving Quadratic Equations_Quadratic Formula_2": {
+                  "problem": "Under what condition does a quadratic equation have no real solutions?",
+                  "solution": "A quadratic equation has no real solutions when the discriminant (b^2 - 4ac) is less than zero. In this case, the solutions are complex numbers.",
+                  "topic": "Quadratic Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": ["Quadratic Functions_Complex Roots_1"],
+                  "subtopic": "Solving Quadratic Equations",
+                  "concept": "Quadratic Formula",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Quadratic Functions_Complex Roots": {
+      "topic": "Quadratic Functions",
+      "prerequisite_ids": [
+        "Complex Numbers Operations_Complex Number Arithmetic",
+        "Quadratic Functions_Solving Quadratic Equations_Quadratic Formula"
+      ],
+      "postrequisite_ids": [],
+      "subtopic": "Complex Roots",
+      "concepts": {
+        "Quadratic Functions_Complex Roots_Complex Solutions": {
+          "topic": "Quadratic Functions",
+          "prerequisite_ids": [
+            "Quadratic Functions_Solving Quadratic Equations_Quadratic Formula_2"
+          ],
+          "postrequisite_ids": [],
+          "subtopic": "Complex Roots",
+          "concept": "Complex Solutions",
+          "questions": {
+            "Quadratic Functions_Complex Roots_1": {
+              "problem": "When a quadratic equation has complex solutions, what form do they take?",
+              "solution": "When a quadratic equation has complex solutions, they are of the form a ± bi, where a and b are real numbers and i is the imaginary unit.",
+              "topic": "Quadratic Functions",
+              "prerequisite_ids": [
+                "Complex Numbers Operations_Complex Number Basics_Definition And Notation_1"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Complex Roots",
+              "concept": "Complex Solutions",
+              "question_number": 1,
+              "difficulty": "medium",
+              "subquestions": [],
+              "code": ""
+            },
+            "Quadratic Functions_Complex Roots_2": {
+              "problem": "What is the relationship between the complex solutions of a quadratic equation?",
+              "solution": "The complex solutions of a quadratic equation are always complex conjugates of each other. If a + bi is a solution, then a - bi is also a solution.",
+              "topic": "Quadratic Functions",
+              "prerequisite_ids": ["Quadratic Functions_Complex Roots_1"],
+              "postrequisite_ids": [],
+              "subtopic": "Complex Roots",
+              "concept": "Complex Solutions",
+              "question_number": 2,
+              "difficulty": "medium",
+              "subquestions": [],
+              "code": ""
+            }
+          }
+        }
+      }
+    },
+    "Matrix Operations And Applications": {
+      "topic": "Matrix Operations And Applications",
+      "prerequisite_ids": [],
+      "postrequisite_ids": [],
+      "subtopics": {
+        "Matrix Operations And Applications_Matrix Basics": {
+          "topic": "Matrix Operations And Applications",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Matrix Basics",
+          "concepts": {
+            "Matrix Operations And Applications_Matrix Basics_Definition and Notation": {
+              "topic": "Matrix Operations And Applications",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Matrix Basics",
+              "concept": "Definition and Notation",
+              "questions": {
+                "Matrix Operations And Applications_Matrix Basics_Definition and Notation_1": {
+                  "problem": "What is a matrix?",
+                  "solution": "A matrix is a rectangular array of numbers, symbols, or expressions, arranged in rows and columns.",
+                  "topic": "Matrix Operations And Applications",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Matrix Basics",
+                  "concept": "Definition and Notation",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Matrix Operations And Applications_Matrix Basics_Definition and Notation_2": {
+                  "problem": "How is the size of a matrix described?",
+                  "solution": "The size of a matrix is described by the number of rows and columns it contains. An m x n matrix has m rows and n columns.",
+                  "topic": "Matrix Operations And Applications",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Matrix Basics",
+                  "concept": "Definition and Notation",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Matrix Operations And Applications_Matrix Basics_Types of Matrices": {
+              "topic": "Matrix Operations And Applications",
+              "prerequisite_ids": [
+                "Matrix Operations And Applications_Matrix Basics_Definition and Notation"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Matrix Basics",
+              "concept": "Types of Matrices",
+              "questions": {
+                "Matrix Operations And Applications_Matrix Basics_Types of Matrices_1": {
+                  "problem": "What is a square matrix?",
+                  "solution": "A square matrix is a matrix with the same number of rows and columns, i.e., an n x n matrix.",
+                  "topic": "Matrix Operations And Applications",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Matrix Basics",
+                  "concept": "Types of Matrices",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Matrix Operations And Applications_Matrix Basics_Types of Matrices_2": {
+                  "problem": "What is an identity matrix?",
+                  "solution": "An identity matrix is a square matrix where all elements on the main diagonal are 1 and all other elements are 0. It is denoted by I.",
+                  "topic": "Matrix Operations And Applications",
+                  "prerequisite_ids": [
+                    "Matrix Operations And Applications_Matrix Basics_Types of Matrices_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Matrix Basics",
+                  "concept": "Types of Matrices",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Matrix Operations And Applications_Matrix Operations": {
+          "topic": "Matrix Operations And Applications",
+          "prerequisite_ids": [
+            "Matrix Operations And Applications_Matrix Basics"
+          ],
+          "postrequisite_ids": [],
+          "subtopic": "Matrix Operations",
+          "concepts": {
+            "Matrix Operations And Applications_Matrix Operations_Addition and Subtraction": {
+              "topic": "Matrix Operations And Applications",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Matrix Operations",
+              "concept": "Addition and Subtraction",
+              "questions": {
+                "Matrix Operations And Applications_Matrix Operations_Addition and Subtraction_1": {
+                  "problem": "Under what condition can two matrices be added or subtracted?",
+                  "solution": "Two matrices can be added or subtracted only if they have the same dimensions, i.e., the same number of rows and columns.",
+                  "topic": "Matrix Operations And Applications",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Matrix Operations",
+                  "concept": "Addition and Subtraction",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Matrix Operations And Applications_Matrix Operations_Addition and Subtraction_2": {
+                  "problem": "How do you add or subtract two matrices?",
+                  "solution": "To add or subtract two matrices, add or subtract corresponding elements. (A ± B)_ij = A_ij ± B_ij.",
+                  "topic": "Matrix Operations And Applications",
+                  "prerequisite_ids": [
+                    "Matrix Operations And Applications_Matrix Operations_Addition and Subtraction_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Matrix Operations",
+                  "concept": "Addition and Subtraction",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Matrix Operations And Applications_Matrix Operations_Multiplication": {
+              "topic": "Matrix Operations And Applications",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Matrix Operations",
+              "concept": "Multiplication",
+              "questions": {
+                "Matrix Operations And Applications_Matrix Operations_Multiplication_1": {
+                  "problem": "What is the condition for matrix multiplication?",
+                  "solution": "For matrix multiplication AB, the number of columns in A must equal the number of rows in B.",
+                  "topic": "Matrix Operations And Applications",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Matrix Operations",
+                  "concept": "Multiplication",
+                  "question_number": 1,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Matrix Operations And Applications_Matrix Operations_Multiplication_2": {
+                  "problem": "What are the dimensions of the product matrix AB?",
+                  "solution": "If A is an m x n matrix and B is an n x p matrix, then the product AB is an m x p matrix.",
+                  "topic": "Matrix Operations And Applications",
+                  "prerequisite_ids": [
+                    "Matrix Operations And Applications_Matrix Operations_Multiplication_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Matrix Operations",
+                  "concept": "Multiplication",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Sequences And Series": {
+      "topic": "Sequences And Series",
+      "prerequisite_ids": ["Functions And Mappings"],
+      "postrequisite_ids": [],
+      "subtopics": {
+        "Sequences And Series_Sequences": {
+          "topic": "Sequences And Series",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Sequences",
+          "concepts": {
+            "Sequences And Series_Sequences_Definition and Notation": {
+              "topic": "Sequences And Series",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Sequences",
+              "concept": "Definition and Notation",
+              "questions": {
+                "Sequences And Series_Sequences_Definition and Notation_1": {
+                  "problem": "What is a sequence in mathematics?",
+                  "solution": "A sequence is an ordered list of numbers. It is usually denoted by {a_n}, where a_n is the n-th term of the sequence.",
+                  "topic": "Sequences And Series",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Sequences",
+                  "concept": "Definition and Notation",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Sequences And Series_Sequences_Definition and Notation_2": {
+                  "problem": "What is the difference between a finite and an infinite sequence?",
+                  "solution": "A finite sequence has a last term, while an infinite sequence continues indefinitely.",
+                  "topic": "Sequences And Series",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Sequences",
+                  "concept": "Definition and Notation",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Sequences And Series_Sequences_Arithmetic and Geometric Sequences": {
+              "topic": "Sequences And Series",
+              "prerequisite_ids": [
+                "Sequences And Series_Sequences_Definition and Notation"
+              ],
+              "postrequisite_ids": [
+                "Sequences And Series_Series_Arithmetic and Geometric Series"
+              ],
+              "subtopic": "Sequences",
+              "concept": "Arithmetic and Geometric Sequences",
+              "questions": {
+                "Sequences And Series_Sequences_Arithmetic and Geometric Sequences_1": {
+                  "problem": "What is an arithmetic sequence?",
+                  "solution": "An arithmetic sequence is a sequence where the difference between the consecutive terms is constant. This constant difference is called the common difference.",
+                  "topic": "Sequences And Series",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Sequences",
+                  "concept": "Arithmetic and Geometric Sequences",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Sequences And Series_Sequences_Arithmetic and Geometric Sequences_2": {
+                  "problem": "What is a geometric sequence?",
+                  "solution": "A geometric sequence is a sequence where each term after the first is found by multiplying the previous term by a fixed, non-zero number called the common ratio.",
+                  "topic": "Sequences And Series",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Sequences",
+                  "concept": "Arithmetic and Geometric Sequences",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Sequences And Series_Series": {
+          "topic": "Sequences And Series",
+          "prerequisite_ids": ["Sequences And Series_Sequences"],
+          "postrequisite_ids": [],
+          "subtopic": "Series",
+          "concepts": {
+            "Sequences And Series_Series_Definition and Notation": {
+              "topic": "Sequences And Series",
+              "prerequisite_ids": [
+                "Sequences And Series_Sequences_Definition and Notation"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Series",
+              "concept": "Definition and Notation",
+              "questions": {
+                "Sequences And Series_Series_Definition and Notation_1": {
+                  "problem": "What is a series in mathematics?",
+                  "solution": "A series is the sum of the terms of a sequence. It is usually denoted by Σ a_n, where a_n is the n-th term of the sequence.",
+                  "topic": "Sequences And Series",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Series",
+                  "concept": "Definition and Notation",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Sequences And Series_Series_Definition and Notation_2": {
+                  "problem": "What is a partial sum of a series?",
+                  "solution": "A partial sum of a series is the sum of a finite number of consecutive terms, starting from the first term. The n-th partial sum is denoted by s_n.",
+                  "topic": "Sequences And Series",
+                  "prerequisite_ids": [
+                    "Sequences And Series_Series_Definition and Notation_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Series",
+                  "concept": "Definition and Notation",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Sequences And Series_Series_Arithmetic and Geometric Series": {
+              "topic": "Sequences And Series",
+              "prerequisite_ids": [
+                "Sequences And Series_Sequences_Arithmetic and Geometric Sequences"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Series",
+              "concept": "Arithmetic and Geometric Series",
+              "questions": {
+                "Sequences And Series_Series_Arithmetic and Geometric Series_1": {
+                  "problem": "What is the formula for the sum of the first n terms of an arithmetic series?",
+                  "solution": "The sum of the first n terms of an arithmetic series is S_n = (n/2) * [2a + (n-1)d], where a is the first term and d is the common difference.",
+                  "topic": "Sequences And Series",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Series",
+                  "concept": "Arithmetic and Geometric Series",
+                  "question_number": 1,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Sequences And Series_Series_Arithmetic and Geometric Series_2": {
+                  "problem": "What is the formula for the sum of the first n terms of a geometric series?",
+                  "solution": "The sum of the first n terms of a geometric series is S_n = [a(1 - r^n)] / (1 - r), where a is the first term and r is the common ratio, if r ≠ 1.",
+                  "topic": "Sequences And Series",
+                  "prerequisite_ids": [
+                    "Sequences And Series_Series_Arithmetic and Geometric Series_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Series",
+                  "concept": "Arithmetic and Geometric Series",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Permutations And Combinations": {
+      "topic": "Permutations And Combinations",
+      "prerequisite_ids": ["Understanding Sets"],
+      "postrequisite_ids": ["Binomial Theorem Applications"],
+      "subtopics": {
+        "Permutations And Combinations_Permutations": {
+          "topic": "Permutations And Combinations",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Permutations",
+          "concepts": {
+            "Permutations And Combinations_Permutations_Definition and Notation": {
+              "topic": "Permutations And Combinations",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Permutations",
+              "concept": "Definition and Notation",
+              "questions": {
+                "Permutations And Combinations_Permutations_Definition and Notation_1": {
+                  "problem": "What is a permutation?",
+                  "solution": "A permutation is an arrangement of objects in a definite order.",
+                  "topic": "Permutations And Combinations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Permutations",
+                  "concept": "Definition and Notation",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Permutations And Combinations_Permutations_Definition and Notation_2": {
+                  "problem": "What does the notation nPr represent?",
+                  "solution": "The notation nPr represents the number of permutations of n objects taken r at a time.",
+                  "topic": "Permutations And Combinations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Permutations",
+                  "concept": "Definition and Notation",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Permutations And Combinations_Permutations_Formulas": {
+              "topic": "Permutations And Combinations",
+              "prerequisite_ids": [
+                "Permutations And Combinations_Permutations_Definition and Notation"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Permutations",
+              "concept": "Formulas",
+              "questions": {
+                "Permutations And Combinations_Permutations_Formulas_1": {
+                  "problem": "What is the formula for nPr?",
+                  "solution": "The formula for nPr is nPr = n! / (n-r)!, where n! is the factorial of n.",
+                  "topic": "Permutations And Combinations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Permutations",
+                  "concept": "Formulas",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Permutations And Combinations_Permutations_Formulas_2": {
+                  "problem": "How many ways can 5 people be arranged in a line?",
+                  "solution": "This is the same as the number of permutations of 5 objects, which is 5P5 = 5! = 5 * 4 * 3 * 2 * 1 = 120.",
+                  "topic": "Permutations And Combinations",
+                  "prerequisite_ids": [
+                    "Permutations And Combinations_Permutations_Formulas_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Permutations",
+                  "concept": "Formulas",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Permutations And Combinations_Combinations": {
+          "topic": "Permutations And Combinations",
+          "prerequisite_ids": ["Permutations And Combinations_Permutations"],
+          "postrequisite_ids": [
+            "Binomial Theorem Applications_Binomial Coefficients"
+          ],
+          "subtopic": "Combinations",
+          "concepts": {
+            "Permutations And Combinations_Combinations_Definition and Notation": {
+              "topic": "Permutations And Combinations",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Combinations",
+              "concept": "Definition and Notation",
+              "questions": {
+                "Permutations And Combinations_Combinations_Definition and Notation_1": {
+                  "problem": "What is a combination?",
+                  "solution": "A combination is a way of selecting items from a collection, such that the order of selection does not matter.",
+                  "topic": "Permutations And Combinations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Combinations",
+                  "concept": "Definition and Notation",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Permutations And Combinations_Combinations_Definition and Notation_2": {
+                  "problem": "What does the notation nCr represent?",
+                  "solution": "The notation nCr represents the number of combinations of n objects taken r at a time.",
+                  "topic": "Permutations And Combinations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Combinations",
+                  "concept": "Definition and Notation",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Permutations And Combinations_Combinations_Formulas": {
+              "topic": "Permutations And Combinations",
+              "prerequisite_ids": [
+                "Permutations And Combinations_Combinations_Definition and Notation",
+                "Permutations And Combinations_Permutations_Formulas"
+              ],
+              "postrequisite_ids": [
+                "Binomial Theorem Applications_Binomial Coefficients_1"
+              ],
+              "subtopic": "Combinations",
+              "concept": "Formulas",
+              "questions": {
+                "Permutations And Combinations_Combinations_Formulas_1": {
+                  "problem": "What is the formula for nCr?",
+                  "solution": "The formula for nCr is nCr = n! / [r!(n-r)!], where n! is the factorial of n.",
+                  "topic": "Permutations And Combinations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Combinations",
+                  "concept": "Formulas",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Permutations And Combinations_Combinations_Formulas_2": {
+                  "problem": "In how many ways can a committee of 3 be chosen from a group of 10 people?",
+                  "solution": "This is the same as the number of combinations of 10 objects taken 3 at a time, which is 10C3 = 10! / [3!(10-3)!] = 120.",
+                  "topic": "Permutations And Combinations",
+                  "prerequisite_ids": [
+                    "Permutations And Combinations_Combinations_Formulas_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Combinations",
+                  "concept": "Formulas",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Binomial Theorem Applications": {
+      "topic": "Binomial Theorem Applications",
+      "prerequisite_ids": ["Permutations And Combinations"],
+      "postrequisite_ids": [],
+      "subtopics": {
+        "Binomial Theorem Applications_Binomial Expansion": {
+          "topic": "Binomial Theorem Applications",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Binomial Expansion",
+          "concepts": {
+            "Binomial Theorem Applications_Binomial Expansion_Binomial Theorem": {
+              "topic": "Binomial Theorem Applications",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Binomial Expansion",
+              "concept": "Binomial Theorem",
+              "questions": {
+                "Binomial Theorem Applications_Binomial Expansion_Binomial Theorem_1": {
+                  "problem": "What is the Binomial Theorem?",
+                  "solution": "The Binomial Theorem is a way of expanding expressions of the form (a + b)^n. It states that (a + b)^n = nC0 * a^n * b^0 + nC1 * a^(n-1) * b^1 + nC2 * a^(n-2) * b^2 + ... + nCn * a^0 * b^n.",
+                  "topic": "Binomial Theorem Applications",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Binomial Expansion",
+                  "concept": "Binomial Theorem",
+                  "question_number": 1,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Binomial Theorem Applications_Binomial Expansion_Binomial Theorem_2": {
+                  "problem": "What is the exponent of a and b in the (r+1)th term of the expansion (a + b)^n?",
+                  "solution": "In the (r+1)th term of the expansion (a + b)^n, the exponent of a is n-r and the exponent of b is r.",
+                  "topic": "Binomial Theorem Applications",
+                  "prerequisite_ids": [
+                    "Binomial Theorem Applications_Binomial Expansion_Binomial Theorem_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Binomial Expansion",
+                  "concept": "Binomial Theorem",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Binomial Theorem Applications_Binomial Coefficients": {
+          "topic": "Binomial Theorem Applications",
+          "prerequisite_ids": [
+            "Permutations And Combinations_Combinations_Formulas"
+          ],
+          "postrequisite_ids": [],
+          "subtopic": "Binomial Coefficients",
+          "concepts": {
+            "Binomial Theorem Applications_Binomial Coefficients_Definition and Notation": {
+              "topic": "Binomial Theorem Applications",
+              "prerequisite_ids": [
+                "Permutations And Combinations_Combinations_Definition and Notation"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Binomial Coefficients",
+              "concept": "Definition and Notation",
+              "questions": {
+                "Binomial Theorem Applications_Binomial Coefficients_Definition and Notation_1": {
+                  "problem": "What is a binomial coefficient?",
+                  "solution": "A binomial coefficient is the coefficient of any term in the expansion of (a + b)^n. It is denoted by nCr or (n choose r).",
+                  "topic": "Binomial Theorem Applications",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Binomial Coefficients",
+                  "concept": "Definition and Notation",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Binomial Theorem Applications_Binomial Coefficients_Definition and Notation_2": {
+                  "problem": "What does the notation (n choose r) represent?",
+                  "solution": "The notation (n choose r) represents the number of ways to choose r objects from n objects, where the order of selection doesn't matter. It is the same as nCr.",
+                  "topic": "Binomial Theorem Applications",
+                  "prerequisite_ids": [
+                    "Binomial Theorem Applications_Binomial Coefficients_Definition and Notation_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Binomial Coefficients",
+                  "concept": "Definition and Notation",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Binomial Theorem Applications_Binomial Coefficients_Properties": {
+              "topic": "Binomial Theorem Applications",
+              "prerequisite_ids": [
+                "Permutations And Combinations_Combinations_Formulas_1"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Binomial Coefficients",
+              "concept": "Properties",
+              "questions": {
+                "Binomial Theorem Applications_Binomial Coefficients_Properties_1": {
+                  "problem": "What is the value of nC0?",
+                  "solution": "nC0 = 1 for all n ≥ 0. This is because there is only one way to choose 0 objects from n objects.",
+                  "topic": "Binomial Theorem Applications",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Binomial Coefficients",
+                  "concept": "Properties",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Binomial Theorem Applications_Binomial Coefficients_Properties_2": {
+                  "problem": "What is the relationship between nCr and nC(n-r)?",
+                  "solution": "nCr = nC(n-r) for all n and r. This is known as the symmetry property of binomial coefficients.",
+                  "topic": "Binomial Theorem Applications",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Binomial Coefficients",
+                  "concept": "Properties",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Coordinate Geometry Basics": {
+      "topic": "Coordinate Geometry Basics",
+      "prerequisite_ids": [],
+      "postrequisite_ids": ["Circle And Equations"],
+      "subtopics": {
+        "Coordinate Geometry Basics_Cartesian Coordinate System": {
+          "topic": "Coordinate Geometry Basics",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Cartesian Coordinate System",
+          "concepts": {
+            "Coordinate Geometry Basics_Cartesian Coordinate System_Axes and Quadrants": {
+              "topic": "Coordinate Geometry Basics",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Cartesian Coordinate System",
+              "concept": "Axes and Quadrants",
+              "questions": {
+                "Coordinate Geometry Basics_Cartesian Coordinate System_Axes and Quadrants_1": {
+                  "problem": "What are the two axes in a Cartesian coordinate system?",
+                  "solution": "The two axes in a Cartesian coordinate system are the x-axis (horizontal axis) and the y-axis (vertical axis).",
+                  "topic": "Coordinate Geometry Basics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Cartesian Coordinate System",
+                  "concept": "Axes and Quadrants",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Coordinate Geometry Basics_Cartesian Coordinate System_Axes and Quadrants_2": {
+                  "problem": "How many quadrants does the Cartesian coordinate system have?",
+                  "solution": "The Cartesian coordinate system has four quadrants, numbered from I to IV in a counterclockwise direction starting from the top-right quadrant.",
+                  "topic": "Coordinate Geometry Basics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Cartesian Coordinate System",
+                  "concept": "Axes and Quadrants",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Coordinate Geometry Basics_Cartesian Coordinate System_Points and Coordinates": {
+              "topic": "Coordinate Geometry Basics",
+              "prerequisite_ids": [
+                "Coordinate Geometry Basics_Cartesian Coordinate System_Axes and Quadrants"
+              ],
+              "postrequisite_ids": [
+                "Circle And Equations_Equation of a Circle"
+              ],
+              "subtopic": "Cartesian Coordinate System",
+              "concept": "Points and Coordinates",
+              "questions": {
+                "Coordinate Geometry Basics_Cartesian Coordinate System_Points and Coordinates_1": {
+                  "problem": "How is a point represented in the Cartesian coordinate system?",
+                  "solution": "A point in the Cartesian coordinate system is represented by an ordered pair of numbers (x, y), where x is the point's x-coordinate (its horizontal position) and y is the point's y-coordinate (its vertical position).",
+                  "topic": "Coordinate Geometry Basics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Cartesian Coordinate System",
+                  "concept": "Points and Coordinates",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Coordinate Geometry Basics_Cartesian Coordinate System_Points and Coordinates_2": {
+                  "problem": "What are the coordinates of the origin?",
+                  "solution": "The origin is the point where the x-axis and y-axis intersect. It has the coordinates (0, 0).",
+                  "topic": "Coordinate Geometry Basics",
+                  "prerequisite_ids": [
+                    "Coordinate Geometry Basics_Cartesian Coordinate System_Points and Coordinates_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Cartesian Coordinate System",
+                  "concept": "Points and Coordinates",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Coordinate Geometry Basics_Lines": {
+          "topic": "Coordinate Geometry Basics",
+          "prerequisite_ids": [
+            "Coordinate Geometry Basics_Cartesian Coordinate System"
+          ],
+          "postrequisite_ids": [],
+          "subtopic": "Lines",
+          "concepts": {
+            "Coordinate Geometry Basics_Lines_Slope": {
+              "topic": "Coordinate Geometry Basics",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [
+                "Coordinate Geometry Basics_Lines_Equation of a Line"
+              ],
+              "subtopic": "Lines",
+              "concept": "Slope",
+              "questions": {
+                "Coordinate Geometry Basics_Lines_Slope_1": {
+                  "problem": "What does the slope of a line represent?",
+                  "solution": "The slope of a line represents the steepness and direction of the line. It is the change in y divided by the change in x between any two points on the line.",
+                  "topic": "Coordinate Geometry Basics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Lines",
+                  "concept": "Slope",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Coordinate Geometry Basics_Lines_Slope_2": {
+                  "problem": "How do you calculate the slope between two points (x1, y1) and (x2, y2)?",
+                  "solution": "The slope between two points (x1, y1) and (x2, y2) is calculated as (y2 - y1) / (x2 - x1).",
+                  "topic": "Coordinate Geometry Basics",
+                  "prerequisite_ids": [
+                    "Coordinate Geometry Basics_Lines_Slope_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Lines",
+                  "concept": "Slope",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Coordinate Geometry Basics_Lines_Equation of a Line": {
+              "topic": "Coordinate Geometry Basics",
+              "prerequisite_ids": ["Coordinate Geometry Basics_Lines_Slope"],
+              "postrequisite_ids": [],
+              "subtopic": "Lines",
+              "concept": "Equation of a Line",
+              "questions": {
+                "Coordinate Geometry Basics_Lines_Equation of a Line_1": {
+                  "problem": "What is the slope-intercept form of a line?",
+                  "solution": "The slope-intercept form of a line is y = mx + b, where m is the slope of the line and b is the y-intercept (the point where the line crosses the y-axis).",
+                  "topic": "Coordinate Geometry Basics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Lines",
+                  "concept": "Equation of a Line",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Coordinate Geometry Basics_Lines_Equation of a Line_2": {
+                  "problem": "What is the point-slope form of a line?",
+                  "solution": "The point-slope form of a line is y - y1 = m(x - x1), where m is the slope of the line and (x1, y1) is a point on the line.",
+                  "topic": "Coordinate Geometry Basics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Lines",
+                  "concept": "Equation of a Line",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Coordinate Geometry Basics_Parabolas": {
+      "topic": "Coordinate Geometry Basics",
+      "prerequisite_ids": [
+        "Quadratic Functions_Quadratic Equations_Vertex Form"
+      ],
+      "postrequisite_ids": [],
+      "subtopic": "Parabolas",
+      "concepts": {
+        "Coordinate Geometry Basics_Parabolas_Definition and Properties": {
+          "topic": "Coordinate Geometry Basics",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Parabolas",
+          "concept": "Definition and Properties",
+          "questions": {
+            "Coordinate Geometry Basics_Parabolas_Definition and Properties_1": {
+              "problem": "What is a parabola?",
+              "solution": "A parabola is a symmetrical open plane curve formed by the intersection of a cone with a plane parallel to its side. It is the graph of a quadratic function.",
+              "topic": "Coordinate Geometry Basics",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Parabolas",
+              "concept": "Definition and Properties",
+              "question_number": 1,
+              "difficulty": "easy",
+              "subquestions": [],
+              "code": ""
+            },
+            "Coordinate Geometry Basics_Parabolas_Definition and Properties_2": {
+              "problem": "What is the vertex of a parabola?",
+              "solution": "The vertex of a parabola is the point where the parabola makes its sharpest turn. It is either the minimum point or the maximum point of the parabola, depending on whether the parabola opens upward or downward.",
+              "topic": "Coordinate Geometry Basics",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Parabolas",
+              "concept": "Definition and Properties",
+              "question_number": 2,
+              "difficulty": "easy",
+              "subquestions": [],
+              "code": ""
+            }
+          }
+        }
+      }
+    },
+    "Circle And Equations": {
+      "topic": "Circle And Equations",
+      "prerequisite_ids": ["Coordinate Geometry Basics"],
+      "postrequisite_ids": [],
+      "subtopics": {
+        "Circle And Equations_Equation of a Circle": {
+          "topic": "Circle And Equations",
+          "prerequisite_ids": [
+            "Coordinate Geometry Basics_Cartesian Coordinate System_Points and Coordinates"
+          ],
+          "postrequisite_ids": [],
+          "subtopic": "Equation of a Circle",
+          "concepts": {
+            "Circle And Equations_Equation of a Circle_Standard Form": {
+              "topic": "Circle And Equations",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Equation of a Circle",
+              "concept": "Standard Form",
+              "questions": {
+                "Circle And Equations_Equation of a Circle_Standard Form_1": {
+                  "problem": "What is the standard form of the equation of a circle?",
+                  "solution": "The standard form of the equation of a circle is (x - h)^2 + (y - k)^2 = r^2, where (h, k) is the center of the circle and r is the radius.",
+                  "topic": "Circle And Equations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Equation of a Circle",
+                  "concept": "Standard Form",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Circle And Equations_Equation of a Circle_Standard Form_2": {
+                  "problem": "What is the equation of a circle with center (2, -3) and radius 5?",
+                  "solution": "Using the standard form (x - h)^2 + (y - k)^2 = r^2, the equation is (x - 2)^2 + (y - (-3))^2 = 5^2, which simplifies to (x - 2)^2 + (y + 3)^2 = 25.",
+                  "topic": "Circle And Equations",
+                  "prerequisite_ids": [
+                    "Circle And Equations_Equation of a Circle_Standard Form_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Equation of a Circle",
+                  "concept": "Standard Form",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Circle And Equations_Equation of a Circle_General Form": {
+              "topic": "Circle And Equations",
+              "prerequisite_ids": [
+                "Circle And Equations_Equation of a Circle_Standard Form"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Equation of a Circle",
+              "concept": "General Form",
+              "questions": {
+                "Circle And Equations_Equation of a Circle_General Form_1": {
+                  "problem": "What is the general form of the equation of a circle?",
+                  "solution": "The general form of the equation of a circle is x^2 + y^2 + Dx + Ey + F = 0, where D, E, and F are constants.",
+                  "topic": "Circle And Equations",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Equation of a Circle",
+                  "concept": "General Form",
+                  "question_number": 1,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Circle And Equations_Equation of a Circle_General Form_2": {
+                  "problem": "How can you find the center and radius of a circle from its general form equation?",
+                  "solution": "If the general form equation is x^2 + y^2 + Dx + Ey + F = 0, the center is (-D/2, -E/2) and the radius is sqrt((D^2 + E^2)/4 - F).",
+                  "topic": "Circle And Equations",
+                  "prerequisite_ids": [
+                    "Circle And Equations_Equation of a Circle_General Form_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Equation of a Circle",
+                  "concept": "General Form",
+                  "question_number": 2,
+                  "difficulty": "hard",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Trigonometric Functions": {
+      "topic": "Trigonometric Functions",
+      "prerequisite_ids": [],
+      "postrequisite_ids": [],
+      "subtopics": {
+        "Trigonometric Functions_Basic Trigonometric Ratios": {
+          "topic": "Trigonometric Functions",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Basic Trigonometric Ratios",
+          "concepts": {
+            "Trigonometric Functions_Basic Trigonometric Ratios_Sine, Cosine, Tangent": {
+              "topic": "Trigonometric Functions",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Basic Trigonometric Ratios",
+              "concept": "Sine, Cosine, Tangent",
+              "questions": {
+                "Trigonometric Functions_Basic Trigonometric Ratios_Sine, Cosine, Tangent_1": {
+                  "problem": "In a right-angled triangle, what is the sine of an angle?",
+                  "solution": "In a right-angled triangle, the sine of an angle is the ratio of the length of the opposite side to the length of the hypotenuse.",
+                  "topic": "Trigonometric Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Basic Trigonometric Ratios",
+                  "concept": "Sine, Cosine, Tangent",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Trigonometric Functions_Basic Trigonometric Ratios_Sine, Cosine, Tangent_2": {
+                  "problem": "In a right-angled triangle, what is the cosine of an angle?",
+                  "solution": "In a right-angled triangle, the cosine of an angle is the ratio of the length of the adjacent side to the length of the hypotenuse.",
+                  "topic": "Trigonometric Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Basic Trigonometric Ratios",
+                  "concept": "Sine, Cosine, Tangent",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Trigonometric Functions_Basic Trigonometric Ratios_Reciprocal Ratios": {
+              "topic": "Trigonometric Functions",
+              "prerequisite_ids": [
+                "Trigonometric Functions_Basic Trigonometric Ratios_Sine, Cosine, Tangent"
+              ],
+              "postrequisite_ids": [],
+              "subtopic": "Basic Trigonometric Ratios",
+              "concept": "Reciprocal Ratios",
+              "questions": {
+                "Trigonometric Functions_Basic Trigonometric Ratios_Reciprocal Ratios_1": {
+                  "problem": "What is the reciprocal of sine?",
+                  "solution": "The reciprocal of sine is cosecant (csc). csc(θ) = 1 / sin(θ).",
+                  "topic": "Trigonometric Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Basic Trigonometric Ratios",
+                  "concept": "Reciprocal Ratios",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Trigonometric Functions_Basic Trigonometric Ratios_Reciprocal Ratios_2": {
+                  "problem": "What is the reciprocal of cosine?",
+                  "solution": "The reciprocal of cosine is secant (sec). sec(θ) = 1 / cos(θ).",
+                  "topic": "Trigonometric Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Basic Trigonometric Ratios",
+                  "concept": "Reciprocal Ratios",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Trigonometric Functions_Trigonometric Identities": {
+          "topic": "Trigonometric Functions",
+          "prerequisite_ids": [
+            "Trigonometric Functions_Basic Trigonometric Ratios"
+          ],
+          "postrequisite_ids": [],
+          "subtopic": "Trigonometric Identities",
+          "concepts": {
+            "Trigonometric Functions_Trigonometric Identities_Pythagorean Identities": {
+              "topic": "Trigonometric Functions",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Trigonometric Identities",
+              "concept": "Pythagorean Identities",
+              "questions": {
+                "Trigonometric Functions_Trigonometric Identities_Pythagorean Identities_1": {
+                  "problem": "What is the Pythagorean identity relating sine and cosine?",
+                  "solution": "The Pythagorean identity relating sine and cosine is sin^2(θ) + cos^2(θ) = 1.",
+                  "topic": "Trigonometric Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Trigonometric Identities",
+                  "concept": "Pythagorean Identities",
+                  "question_number": 1,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Trigonometric Functions_Trigonometric Identities_Pythagorean Identities_2": {
+                  "problem": "What is the Pythagorean identity relating tangent and secant?",
+                  "solution": "The Pythagorean identity relating tangent and secant is tan^2(θ) + 1 = sec^2(θ).",
+                  "topic": "Trigonometric Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Trigonometric Identities",
+                  "concept": "Pythagorean Identities",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Trigonometric Functions_Trigonometric Identities_Sum and Difference Identities": {
+              "topic": "Trigonometric Functions",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Trigonometric Identities",
+              "concept": "Sum and Difference Identities",
+              "questions": {
+                "Trigonometric Functions_Trigonometric Identities_Sum and Difference Identities_1": {
+                  "problem": "What is the sum identity for sine?",
+                  "solution": "The sum identity for sine is sin(α + β) = sin(α)cos(β) + cos(α)sin(β).",
+                  "topic": "Trigonometric Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Trigonometric Identities",
+                  "concept": "Sum and Difference Identities",
+                  "question_number": 1,
+                  "difficulty": "hard",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Trigonometric Functions_Trigonometric Identities_Sum and Difference Identities_2": {
+                  "problem": "What is the difference identity for cosine?",
+                  "solution": "The difference identity for cosine is cos(α - β) = cos(α)cos(β) + sin(α)sin(β).",
+                  "topic": "Trigonometric Functions",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Trigonometric Identities",
+                  "concept": "Sum and Difference Identities",
+                  "question_number": 2,
+                  "difficulty": "hard",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Introduction To Statistics": {
+      "topic": "Introduction To Statistics",
+      "prerequisite_ids": [],
+      "postrequisite_ids": ["Data Representation & Analysis"],
+      "subtopics": {
+        "Introduction To Statistics_Basic Concepts": {
+          "topic": "Introduction To Statistics",
+          "prerequisite_ids": [],
+          "postrequisite_ids": [],
+          "subtopic": "Basic Concepts",
+          "concepts": {
+            "Introduction To Statistics_Basic Concepts_Population and Sample": {
+              "topic": "Introduction To Statistics",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Basic Concepts",
+              "concept": "Population and Sample",
+              "questions": {
+                "Introduction To Statistics_Basic Concepts_Population and Sample_1": {
+                  "problem": "What is a population in statistics?",
+                  "solution": "In statistics, a population is the entire pool from which a statistical sample is drawn. It can be any complete set of people, animals, plants, or objects.",
+                  "topic": "Introduction To Statistics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Basic Concepts",
+                  "concept": "Population and Sample",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Introduction To Statistics_Basic Concepts_Population and Sample_2": {
+                  "problem": "What is a sample in statistics?",
+                  "solution": "In statistics, a sample is a subset of a population. It is a set of individuals or objects collected in a way that represents the larger population.",
+                  "topic": "Introduction To Statistics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Basic Concepts",
+                  "concept": "Population and Sample",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Introduction To Statistics_Basic Concepts_Variables and Data Types": {
+              "topic": "Introduction To Statistics",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [
+                "Data Representation & Analysis_Data Types"
+              ],
+              "subtopic": "Basic Concepts",
+              "concept": "Variables and Data Types",
+              "questions": {
+                "Introduction To Statistics_Basic Concepts_Variables and Data Types_1": {
+                  "problem": "What is a variable in statistics?",
+                  "solution": "In statistics, a variable is any characteristic, number, or quantity that can be measured or counted. It is called a variable because the value may vary between data units in a population.",
+                  "topic": "Introduction To Statistics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Basic Concepts",
+                  "concept": "Variables and Data Types",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Introduction To Statistics_Basic Concepts_Variables and Data Types_2": {
+                  "problem": "What are the two main types of variables in statistics?",
+                  "solution": "The two main types of variables in statistics are quantitative (numerical) variables and qualitative (categorical) variables. Quantitative variables take numerical values, while qualitative variables take non-numerical values.",
+                  "topic": "Introduction To Statistics",
+                  "prerequisite_ids": [
+                    "Introduction To Statistics_Basic Concepts_Variables and Data Types_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Basic Concepts",
+                  "concept": "Variables and Data Types",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Introduction To Statistics_Data Representation": {
+          "topic": "Introduction To Statistics",
+          "prerequisite_ids": [
+            "Understanding Sets_Set Operations_Venn Diagrams"
+          ],
+          "postrequisite_ids": [],
+          "subtopic": "Data Representation",
+          "concepts": {
+            "Introduction To Statistics_Data Representation_Frequency Tables": {
+              "topic": "Introduction To Statistics",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Data Representation",
+              "concept": "Frequency Tables",
+              "questions": {
+                "Introduction To Statistics_Data Representation_Frequency Tables_1": {
+                  "problem": "What is a frequency table?",
+                  "solution": "A frequency table is a way of organizing raw data in a compact form by displaying a series of scores in ascending or descending order, together with their frequencies (the number of times each score occurs in the respective data set).",
+                  "topic": "Introduction To Statistics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Data Representation",
+                  "concept": "Frequency Tables",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Introduction To Statistics_Data Representation_Frequency Tables_2": {
+                  "problem": "What is a relative frequency table?",
+                  "solution": "A relative frequency table is a frequency table where each frequency is divided by the total frequency and expressed as a fraction or percentage. It shows the proportion of data points that have each score value.",
+                  "topic": "Introduction To Statistics",
+                  "prerequisite_ids": [
+                    "Introduction To Statistics_Data Representation_Frequency Tables_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Data Representation",
+                  "concept": "Frequency Tables",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Introduction To Statistics_Data Representation_Graphical Representations": {
+              "topic": "Introduction To Statistics",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [
+                "Data Representation & Analysis_Graphical Representations"
+              ],
+              "subtopic": "Data Representation",
+              "concept": "Graphical Representations",
+              "questions": {
+                "Introduction To Statistics_Data Representation_Graphical Representations_1": {
+                  "problem": "What are some common graphical representations of data?",
+                  "solution": "Some common graphical representations of data include bar graphs, histograms, pie charts, line graphs, and scatter plots. Each is suited for different types of data and different purposes.",
+                  "topic": "Introduction To Statistics",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Data Representation",
+                  "concept": "Graphical Representations",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Introduction To Statistics_Data Representation_Graphical Representations_2": {
+                  "problem": "What type of data are bar graphs best suited for?",
+                  "solution": "Bar graphs are best suited for categorical data, where the heights of the bars represent the frequencies or values for different categories.",
+                  "topic": "Introduction To Statistics",
+                  "prerequisite_ids": [
+                    "Introduction To Statistics_Data Representation_Graphical Representations_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Data Representation",
+                  "concept": "Graphical Representations",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Data Representation & Analysis": {
+      "topic": "Data Representation & Analysis",
+      "prerequisite_ids": ["Introduction To Statistics"],
+      "postrequisite_ids": [],
+      "subtopics": {
+        "Data Representation & Analysis_Data Types": {
+          "topic": "Data Representation & Analysis",
+          "prerequisite_ids": [
+            "Introduction To Statistics_Basic Concepts_Variables and Data Types"
+          ],
+          "postrequisite_ids": [],
+          "subtopic": "Data Types",
+          "concepts": {
+            "Data Representation & Analysis_Data Types_Quantitative Data": {
+              "topic": "Data Representation & Analysis",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Data Types",
+              "concept": "Quantitative Data",
+              "questions": {
+                "Data Representation & Analysis_Data Types_Quantitative Data_1": {
+                  "problem": "What is quantitative data?",
+                  "solution": "Quantitative data is data that can be quantified, verified, and conveyed with numbers. It can be discrete (countable values) or continuous (measurable values).",
+                  "topic": "Data Representation & Analysis",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Data Types",
+                  "concept": "Quantitative Data",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Data Representation & Analysis_Data Types_Quantitative Data_2": {
+                  "problem": "What is the difference between discrete and continuous quantitative data?",
+                  "solution": "Discrete quantitative data can only take certain values (usually integers), often as a result of counting. Continuous quantitative data can take any value within a range, often as a result of measuring.",
+                  "topic": "Data Representation & Analysis",
+                  "prerequisite_ids": [
+                    "Data Representation & Analysis_Data Types_Quantitative Data_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Data Types",
+                  "concept": "Quantitative Data",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Data Representation & Analysis_Data Types_Qualitative Data": {
+              "topic": "Data Representation & Analysis",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Data Types",
+              "concept": "Qualitative Data",
+              "questions": {
+                "Data Representation & Analysis_Data Types_Qualitative Data_1": {
+                  "problem": "What is qualitative data?",
+                  "solution": "Qualitative data is data that cannot be expressed as a number. It is categorical in nature and describes qualities or characteristics.",
+                  "topic": "Data Representation & Analysis",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Data Types",
+                  "concept": "Qualitative Data",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Data Representation & Analysis_Data Types_Qualitative Data_2": {
+                  "problem": "What are the two main types of qualitative data?",
+                  "solution": "The two main types of qualitative data are nominal data (unordered categories) and ordinal data (ordered categories).",
+                  "topic": "Data Representation & Analysis",
+                  "prerequisite_ids": [
+                    "Data Representation & Analysis_Data Types_Qualitative Data_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Data Types",
+                  "concept": "Qualitative Data",
+                  "question_number": 2,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        },
+        "Data Representation & Analysis_Graphical Representations": {
+          "topic": "Data Representation & Analysis",
+          "prerequisite_ids": [
+            "Introduction To Statistics_Data Representation_Graphical Representations"
+          ],
+          "postrequisite_ids": [],
+          "subtopic": "Graphical Representations",
+          "concepts": {
+            "Data Representation & Analysis_Graphical Representations_Histograms": {
+              "topic": "Data Representation & Analysis",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Graphical Representations",
+              "concept": "Histograms",
+              "questions": {
+                "Data Representation & Analysis_Graphical Representations_Histograms_1": {
+                  "problem": "What is a histogram?",
+                  "solution": "A histogram is a graphical display of data using bars of different heights. It is similar to a bar graph, but a histogram groups numbers into ranges.",
+                  "topic": "Data Representation & Analysis",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Graphical Representations",
+                  "concept": "Histograms",
+                  "question_number": 1,
+                  "difficulty": "easy",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Data Representation & Analysis_Graphical Representations_Histograms_2": {
+                  "problem": "What type of data are histograms used for?",
+                  "solution": "Histograms are used to display the distribution of continuous data. They are useful when you want to see how frequently data occurs within certain ranges of values.",
+                  "topic": "Data Representation & Analysis",
+                  "prerequisite_ids": [
+                    "Data Representation & Analysis_Graphical Representations_Histograms_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Graphical Representations",
+                  "concept": "Histograms",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            },
+            "Data Representation & Analysis_Graphical Representations_Box Plots": {
+              "topic": "Data Representation & Analysis",
+              "prerequisite_ids": [],
+              "postrequisite_ids": [],
+              "subtopic": "Graphical Representations",
+              "concept": "Box Plots",
+              "questions": {
+                "Data Representation & Analysis_Graphical Representations_Box Plots_1": {
+                  "problem": "What is a box plot?",
+                  "solution": "A box plot (also called a box-and-whisker plot) is a standardized way of displaying the distribution of data based on five number summary: minimum, first quartile, median, third quartile, and maximum.",
+                  "topic": "Data Representation & Analysis",
+                  "prerequisite_ids": [],
+                  "postrequisite_ids": [],
+                  "subtopic": "Graphical Representations",
+                  "concept": "Box Plots",
+                  "question_number": 1,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                },
+                "Data Representation & Analysis_Graphical Representations_Box Plots_2": {
+                  "problem": "What information does a box plot provide about a dataset?",
+                  "solution": "A box plot provides information about a dataset's median, quartiles, and outliers. It can show whether a dataset is symmetric or skewed, and how tightly the data is grouped.",
+                  "topic": "Data Representation & Analysis",
+                  "prerequisite_ids": [
+                    "Data Representation & Analysis_Graphical Representations_Box Plots_1"
+                  ],
+                  "postrequisite_ids": [],
+                  "subtopic": "Graphical Representations",
+                  "concept": "Box Plots",
+                  "question_number": 2,
+                  "difficulty": "medium",
+                  "subquestions": [],
+                  "code": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
