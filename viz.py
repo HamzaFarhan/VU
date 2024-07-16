@@ -8,6 +8,7 @@ from dash.dependencies import Input, Output, State
 
 from vu_models import Topics
 
+TOPICS_FILE = "math_topics_4.json"
 PREREQ_COLOR = "purple"
 
 
@@ -113,11 +114,11 @@ def create_graph_visualization(topics: Topics, selected_node=None):
             # print(f'PREREQUISITE EDGE FOUND: SELECTED NODE = {selected_node}, EDGE = {edge}')
             if selected_node and (edge[0] == selected_node or edge[1] == selected_node):
                 # print(f'DRAWING SELECTED NODE EDGE: SELECTED NODE = {selected_node}')
-                prereq_edge_trace["x"] += (x0, x1, None)
-                prereq_edge_trace["y"] += (y0, y1, None)
+                prereq_edge_trace["x"] += (x0, x1, None)  # type: ignore
+                prereq_edge_trace["y"] += (y0, y1, None)  # type: ignore
         else:
-            edge_trace["x"] += (x0, x1, None)
-            edge_trace["y"] += (y0, y1, None)
+            edge_trace["x"] += (x0, x1, None)  # type: ignore
+            edge_trace["y"] += (y0, y1, None)  # type: ignore
 
     node_traces = []
     colors = {
@@ -149,8 +150,8 @@ def create_graph_visualization(topics: Topics, selected_node=None):
             g_node_type = G.nodes[node].get("type")
             if g_node_type == node_type:
                 x, y = pos[node]
-                node_trace["x"] += (x,)
-                node_trace["y"] += (y,)
+                node_trace["x"] += (x,)  # type: ignore
+                node_trace["y"] += (y,)  # type: ignore
 
                 if node_type == "question":
                     # Include topic, subtopic, and learning outcome for questions
@@ -179,7 +180,7 @@ def create_graph_visualization(topics: Topics, selected_node=None):
                 else:
                     node_info = f"{G.nodes[node]['type'].capitalize()}: {G.nodes[node]['label']}"
 
-                node_trace["text"] += (node_info,)
+                node_trace["text"] += (node_info,)  # type: ignore
                 node_indices[node_info] = node
 
         node_traces.append(node_trace)
@@ -204,7 +205,7 @@ def create_graph_visualization(topics: Topics, selected_node=None):
     return fig, G, pos, node_indices
 
 
-dummy_topics = Topics(**json.load(open("math_topics.json")))
+dummy_topics = Topics(**json.load(open(TOPICS_FILE)))
 
 initial_fig, G, pos, node_indices = create_graph_visualization(dummy_topics)
 
@@ -232,7 +233,6 @@ app.layout = html.Div(
     State("graph-data", "data"),
 )
 def update_graph(clickData, graph_data):
-    pos = graph_data["pos"]
     node_indices = graph_data["node_indices"]
     selected_node = graph_data["selected_node"]
 

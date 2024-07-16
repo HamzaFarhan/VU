@@ -10,6 +10,8 @@ from dash.dependencies import Input, Output
 
 from vu_models import Topics
 
+
+TOPICS_FILE = "math_topics_4.json"
 EDGE_COLOR = "purple"
 
 
@@ -151,13 +153,13 @@ def create_topics_subtopics_network_graph(
             topics_graph.add_edge(
                 prereq_id, topic_id, type="prereq", color=EDGE_COLOR, arrow=True
             )
-        for subtopic_id, subtopic in topic.subtopics.items():
-            for prereq_id in subtopic.prerequisite_ids:
-                if prereq_id.count("_") > 1:
-                    continue
-                subtopics_graph.add_edge(
-                    prereq_id, subtopic_id, type="prereq", color=EDGE_COLOR, arrow=True
-                )
+    for subtopic_id, subtopic in topics.subtopics.items():
+        for prereq_id in subtopic.prerequisite_ids:
+            if prereq_id.count("_") > 1:
+                continue
+            subtopics_graph.add_edge(
+                prereq_id, subtopic_id, type="prereq", color=EDGE_COLOR, arrow=True
+            )
     topic_positions = nx.circular_layout(topics_graph)
     subtopic_positions = calculate_subtopic_positions(
         topics=topics, topic_positions=topic_positions
@@ -285,7 +287,7 @@ def create_topics_subtopics_network_graph(
     return fig
 
 
-topics = Topics(**json.load(open("math_topics_smaller.json")))
+topics = Topics(**json.load(open(TOPICS_FILE)))
 # print(f"subtopics: {topics.subtopics.keys()}")
 app = dash.Dash(__name__)
 selected_topic = "All Topics"
