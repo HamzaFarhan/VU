@@ -129,7 +129,7 @@ def create_graph_visualization(topics: Topics, selected_node=None):
             text=[],
             mode="markers",
             textposition="top center",
-            hoverinfo="text",  # Changed from "name+text" to "text"
+            hoverinfo="text",
             name=node_type.capitalize(),
             marker=dict(
                 size=sizes[node_type], color=colors[node_type], symbol="circle"
@@ -145,14 +145,25 @@ def create_graph_visualization(topics: Topics, selected_node=None):
                 node_trace["y"] += (y,)
 
                 if node_type == "question":
-                    # For questions, use the problem statement as hover text
                     node_info = G.nodes[node]["label"]
-                    node_trace["text"] += (node_info,)
+                elif node_type == "subtopic":
+                    # Include topic name for subtopics
+                    topic_id = ".".join(node.split(".")[:1])
+                    topic_name = G.nodes[topic_id]["label"]
+                    node_info = (
+                        f"Subtopic: {G.nodes[node]['label']} (Topic: {topic_name})"
+                    )
+                elif node_type == "learning outcome":
+                    # Include topic and subtopic names for learning outcomes
+                    topic_id = ".".join(node.split(".")[:1])
+                    subtopic_id = ".".join(node.split(".")[:2])
+                    topic_name = G.nodes[topic_id]["label"]
+                    subtopic_name = G.nodes[subtopic_id]["label"]
+                    node_info = f"Learning Outcome: {G.nodes[node]['label']} (Topic: {topic_name}, Subtopic: {subtopic_name})"
                 else:
-                    # For other node types, keep the existing format
                     node_info = f"{G.nodes[node]['type'].capitalize()}: {G.nodes[node]['label']}"
-                    node_trace["text"] += (node_info,)
 
+                node_trace["text"] += (node_info,)
                 node_indices[node_info] = node
 
         node_traces.append(node_trace)
