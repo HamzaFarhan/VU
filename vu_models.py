@@ -294,6 +294,27 @@ class Topics(BaseModel):
             return
         return topic.get(id)
 
+    def id_to_numbered(self, id: str) -> str:
+        split_id = id.split("_")
+        # print(f"In id_to_numbered; split_id: {split_id}")
+        subtopic_id = "_".join(split_id[:2])
+        concept_id = "_".join(split_id[:3])
+        topic = self.topics[split_id[0]]
+        topic_names = list(self.topics.keys())
+        numbered_id = str(topic_names.index(split_id[0]) + 1)
+        if len(split_id) > 1:
+            subtopic_id = "_".join(split_id[:2])
+            subtopic_names = list(topic.subtopics.keys())
+            # print(f"In id_to_numbered; subtopic_names: {subtopic_names}")
+            numbered_id += f".{subtopic_names.index(subtopic_id) + 1}"
+        if len(split_id) > 2:
+            subtopic = topic.subtopics[subtopic_id]
+            concept_names = list(subtopic.concepts.keys())
+            numbered_id += f".{concept_names.index(concept_id) + 1}"
+        if len(split_id) > 3:
+            numbered_id += f".{split_id[3]}"
+        return numbered_id
+
     def add_topics(
         self,
         topics: list[Topic | str] | Topic | str | None = None,
