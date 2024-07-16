@@ -145,7 +145,15 @@ def create_graph_visualization(topics: Topics, selected_node=None):
                 node_trace["y"] += (y,)
 
                 if node_type == "question":
-                    node_info = G.nodes[node]["label"]
+                    # Include topic, subtopic, and learning outcome for questions
+                    topic_id = ".".join(node.split(".")[:1])
+                    subtopic_id = ".".join(node.split(".")[:2])
+                    learning_outcome_id = ".".join(node.split(".")[:3])
+                    topic_name = G.nodes[topic_id]["label"]
+                    subtopic_name = G.nodes[subtopic_id]["label"]
+                    learning_outcome_name = G.nodes[learning_outcome_id]["label"]
+                    question_label = G.nodes[node]["label"]
+                    node_info = f"Question: {question_label}\n(Topic: {topic_name}, Subtopic: {subtopic_name}, Learning Outcome: {learning_outcome_name})"
                 elif node_type == "subtopic":
                     # Include topic name for subtopics
                     topic_id = ".".join(node.split(".")[:1])
