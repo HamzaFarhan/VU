@@ -30,6 +30,8 @@ def create_graph_from_topics(topics: Topics):
                     G.add_node(question_id, type="question", label=question.problem)
                     G.add_edge(concept_id, question_id)
         for prereq in topic.prerequisite_ids:
+            if prereq.count("_") > 0:
+                continue
             G.add_edge(
                 topics.id_to_numbered(prereq),
                 topic_id,
@@ -39,6 +41,8 @@ def create_graph_from_topics(topics: Topics):
             )
         for subtopic_id, subtopic in topic.subtopics.items():
             for prereq in subtopic.prerequisite_ids:
+                if prereq.count("_") > 1:
+                    continue
                 G.add_edge(
                     topics.id_to_numbered(prereq),
                     topics.id_to_numbered(subtopic_id),
@@ -49,6 +53,8 @@ def create_graph_from_topics(topics: Topics):
             for concept_id, concept in subtopic.concepts.items():
                 concept_id = topics.id_to_numbered(concept_id)
                 for prereq in concept.prerequisite_ids:
+                    if prereq.count("_") > 2:
+                        continue
                     G.add_edge(
                         topics.id_to_numbered(prereq),
                         concept_id,
@@ -59,6 +65,8 @@ def create_graph_from_topics(topics: Topics):
                 for question in concept.questions.values():
                     question_id = f"{concept_id}.{question.question_number}"
                     for prereq in question.prerequisite_ids:
+                        if prereq.count("_") > 3:
+                            continue
                         G.add_edge(
                             topics.id_to_numbered(prereq),
                             question_id,
