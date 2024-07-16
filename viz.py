@@ -8,64 +8,64 @@ from dash.dependencies import Input, Output, State
 
 from vu_models import Topics
 
+PREREQ_COLOR = "purple"
+
 
 def create_graph_from_topics(topics: Topics):
     graphs = []
-    for topic in topics.topics.values():
+    for topic_id, topic in topics.topics.items():
+        topic_id = topics.id_to_numbered(topic_id)
         G = nx.DiGraph()
-        G.add_node(topic.id, type="topic", label=topic.topic)
-        for subtopic in topic.subtopics.values():
-            G.add_node(subtopic.id, type="subtopic")  # , label=subtopic.subtopic)
-            G.add_edge(topic.id, subtopic.id)
-            for concept in subtopic.concepts.values():
-                G.add_node(
-                    concept.id, type="learning outcome"
-                )  # , label=concept.concept)
-                G.add_edge(subtopic.id, concept.id)
+        G.add_node(topic_id, type="topic", label=topic.topic)
+        for subtopic_id, subtopic in topic.subtopics.items():
+            subtopic_id = topics.id_to_numbered(subtopic_id)
+            G.add_node(subtopic_id, type="subtopic", label=subtopic.subtopic)
+            G.add_edge(topic_id, subtopic_id)
+            for concept_id, concept in subtopic.concepts.items():
+                concept_id = topics.id_to_numbered(concept_id)
+                G.add_node(concept_id, type="learning outcome", label=concept.concept)
+                G.add_edge(subtopic_id, concept_id)
                 for question in concept.questions.values():
-                    G.add_node(
-                        question.id,
-                        type="question",
-                        # label=question.question_number,
-                    )
-                    G.add_edge(concept.id, question.id)
-        # for topic in topics.topics.values():
+                    question_id = f"{concept_id}.{question.question_number}"
+                    G.add_node(question_id, type="question", label=question.problem)
+                    G.add_edge(concept_id, question_id)
         for prereq in topic.prerequisite_ids:
             G.add_edge(
-                prereq,
-                topic.id,
+                topics.id_to_numbered(prereq),
+                topic_id,
                 type="prerequisite",
-                color="red",
+                color=PREREQ_COLOR,
                 arrow=True,
             )
-        for subtopic in topic.subtopics.values():
+        for subtopic_id, subtopic in topic.subtopics.items():
             for prereq in subtopic.prerequisite_ids:
                 G.add_edge(
-                    prereq,
-                    subtopic.id,
+                    topics.id_to_numbered(prereq),
+                    topics.id_to_numbered(subtopic_id),
                     type="prerequisite",
-                    color="red",
+                    color=PREREQ_COLOR,
                     arrow=True,
                 )
-            for concept in subtopic.concepts.values():
+            for concept_id, concept in subtopic.concepts.items():
+                concept_id = topics.id_to_numbered(concept_id)
                 for prereq in concept.prerequisite_ids:
                     G.add_edge(
-                        prereq,
-                        concept.id,
+                        topics.id_to_numbered(prereq),
+                        concept_id,
                         type="prerequisite",
-                        color="red",
+                        color=PREREQ_COLOR,
                         arrow=True,
                     )
                 for question in concept.questions.values():
+                    question_id = f"{concept_id}.{question.question_number}"
                     for prereq in question.prerequisite_ids:
                         G.add_edge(
-                            prereq,
-                            question.id,
+                            topics.id_to_numbered(prereq),
+                            question_id,
                             type="prerequisite",
-                            color="red",
+                            color=PREREQ_COLOR,
                             arrow=True,
                         )
-
         graphs.append(G)
     return nx.compose_all(graphs)
 
@@ -91,7 +91,7 @@ def create_graph_visualization(topics: Topics, selected_node=None):
     prereq_edge_trace = go.Scatter(
         x=[],
         y=[],
-        line=dict(width=1, color="red"),
+        line=dict(width=1, color=PREREQ_COLOR),
         hoverinfo="none",
         mode="lines+markers",
         marker=dict(symbol="arrow", size=8, angleref="previous"),
@@ -121,34 +121,39 @@ def create_graph_visualization(topics: Topics, selected_node=None):
     sizes = {"topic": 15, "subtopic": 12, "learning outcome": 10, "question": 8}
 
     node_indices = {}
-    index = 0
 
     for node_type in ["topic", "subtopic", "learning outcome", "question"]:
-        node_trace = go.Scatter(
+        node_trace_args = dict(
             x=[],
             y=[],
             text=[],
             mode="markers",
             textposition="top center",
-            hoverinfo="text",
+            hoverinfo="text",  # Changed from "name+text" to "text"
             name=node_type.capitalize(),
             marker=dict(
                 size=sizes[node_type], color=colors[node_type], symbol="circle"
             ),
             textfont=dict(size=sizes[node_type] - 2),
         )
-
+        node_trace = go.Scatter(**node_trace_args)
         for node in G.nodes():
-            if G.nodes[node].get("type") == node_type:
+            g_node_type = G.nodes[node].get("type")
+            if g_node_type == node_type:
                 x, y = pos[node]
                 node_trace["x"] += (x,)
                 node_trace["y"] += (y,)
-                # node_info = (
-                #     f"{G.nodes[node]['type'].capitalize()}: {G.nodes[node]['label']}"
-                # )
-                node_trace["text"] += (node,)  # (node_info,)
-                node_indices[node] = node
-                index += 1
+
+                if node_type == "question":
+                    # For questions, use the problem statement as hover text
+                    node_info = G.nodes[node]["label"]
+                    node_trace["text"] += (node_info,)
+                else:
+                    # For other node types, keep the existing format
+                    node_info = f"{G.nodes[node]['type'].capitalize()}: {G.nodes[node]['label']}"
+                    node_trace["text"] += (node_info,)
+
+                node_indices[node_info] = node
 
         node_traces.append(node_trace)
 
@@ -172,7 +177,7 @@ def create_graph_visualization(topics: Topics, selected_node=None):
     return fig, G, pos, node_indices
 
 
-dummy_topics = Topics(**json.load(open("math_dummy.json")))
+dummy_topics = Topics(**json.load(open("math_topics.json")))
 
 initial_fig, G, pos, node_indices = create_graph_visualization(dummy_topics)
 
@@ -200,15 +205,15 @@ app.layout = html.Div(
     State("graph-data", "data"),
 )
 def update_graph(clickData, graph_data):
-    print("UPDATE GRAPH CALLED")
     pos = graph_data["pos"]
     node_indices = graph_data["node_indices"]
     selected_node = graph_data["selected_node"]
 
     if clickData:
-        # print(f'CLICK DATA = {clickData}, selected_node = {selected_node}')
+        # print(f"CLICK DATA = {clickData}")
         point = clickData["points"][0]
         point_index = str(point["text"])
+        # print(f"Node indices: {node_indices}")
         try:
             clicked_node = node_indices[point_index]
             # print(f'CLICKED NODE = {clicked_node}, SELECTED NODE = {selected_node}')

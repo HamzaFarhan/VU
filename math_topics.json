@@ -266,7 +266,7 @@
           "prerequisite_ids": [
             "Complex Numbers Operations_Complex Number Basics"
           ],
-          "postrequisite_ids": ["Quadratic Functions_Complex Roots"],
+          "postrequisite_ids": [],
           "subtopic": "Complex Number Arithmetic",
           "concepts": {
             "Complex Numbers Operations_Complex Number Arithmetic_Addition and Subtraction": {
@@ -569,7 +569,7 @@
               "prerequisite_ids": [
                 "Quadratic Functions_Quadratic Equations_Standard Form"
               ],
-              "postrequisite_ids": ["Coordinate Geometry Basics_Parabolas"],
+              "postrequisite_ids": [],
               "subtopic": "Quadratic Equations",
               "concept": "Vertex Form",
               "questions": {
@@ -655,7 +655,7 @@
               "prerequisite_ids": [
                 "Quadratic Functions_Quadratic Equations_Standard Form"
               ],
-              "postrequisite_ids": ["Quadratic Functions_Complex Roots"],
+              "postrequisite_ids": [],
               "subtopic": "Solving Quadratic Equations",
               "concept": "Quadratic Formula",
               "questions": {
@@ -677,7 +677,7 @@
                   "solution": "A quadratic equation has no real solutions when the discriminant (b^2 - 4ac) is less than zero. In this case, the solutions are complex numbers.",
                   "topic": "Quadratic Functions",
                   "prerequisite_ids": [],
-                  "postrequisite_ids": ["Quadratic Functions_Complex Roots_1"],
+                  "postrequisite_ids": [],
                   "subtopic": "Solving Quadratic Equations",
                   "concept": "Quadratic Formula",
                   "question_number": 2,
@@ -686,56 +686,6 @@
                   "code": ""
                 }
               }
-            }
-          }
-        }
-      }
-    },
-    "Quadratic Functions_Complex Roots": {
-      "topic": "Quadratic Functions",
-      "prerequisite_ids": [
-        "Complex Numbers Operations_Complex Number Arithmetic",
-        "Quadratic Functions_Solving Quadratic Equations_Quadratic Formula"
-      ],
-      "postrequisite_ids": [],
-      "subtopic": "Complex Roots",
-      "concepts": {
-        "Quadratic Functions_Complex Roots_Complex Solutions": {
-          "topic": "Quadratic Functions",
-          "prerequisite_ids": [
-            "Quadratic Functions_Solving Quadratic Equations_Quadratic Formula_2"
-          ],
-          "postrequisite_ids": [],
-          "subtopic": "Complex Roots",
-          "concept": "Complex Solutions",
-          "questions": {
-            "Quadratic Functions_Complex Roots_1": {
-              "problem": "When a quadratic equation has complex solutions, what form do they take?",
-              "solution": "When a quadratic equation has complex solutions, they are of the form a ± bi, where a and b are real numbers and i is the imaginary unit.",
-              "topic": "Quadratic Functions",
-              "prerequisite_ids": [
-                "Complex Numbers Operations_Complex Number Basics_Definition And Notation_1"
-              ],
-              "postrequisite_ids": [],
-              "subtopic": "Complex Roots",
-              "concept": "Complex Solutions",
-              "question_number": 1,
-              "difficulty": "medium",
-              "subquestions": [],
-              "code": ""
-            },
-            "Quadratic Functions_Complex Roots_2": {
-              "problem": "What is the relationship between the complex solutions of a quadratic equation?",
-              "solution": "The complex solutions of a quadratic equation are always complex conjugates of each other. If a + bi is a solution, then a - bi is also a solution.",
-              "topic": "Quadratic Functions",
-              "prerequisite_ids": ["Quadratic Functions_Complex Roots_1"],
-              "postrequisite_ids": [],
-              "subtopic": "Complex Roots",
-              "concept": "Complex Solutions",
-              "question_number": 2,
-              "difficulty": "medium",
-              "subquestions": [],
-              "code": ""
             }
           }
         }
@@ -1573,51 +1523,6 @@
                   "code": ""
                 }
               }
-            }
-          }
-        }
-      }
-    },
-    "Coordinate Geometry Basics_Parabolas": {
-      "topic": "Coordinate Geometry Basics",
-      "prerequisite_ids": [
-        "Quadratic Functions_Quadratic Equations_Vertex Form"
-      ],
-      "postrequisite_ids": [],
-      "subtopic": "Parabolas",
-      "concepts": {
-        "Coordinate Geometry Basics_Parabolas_Definition and Properties": {
-          "topic": "Coordinate Geometry Basics",
-          "prerequisite_ids": [],
-          "postrequisite_ids": [],
-          "subtopic": "Parabolas",
-          "concept": "Definition and Properties",
-          "questions": {
-            "Coordinate Geometry Basics_Parabolas_Definition and Properties_1": {
-              "problem": "What is a parabola?",
-              "solution": "A parabola is a symmetrical open plane curve formed by the intersection of a cone with a plane parallel to its side. It is the graph of a quadratic function.",
-              "topic": "Coordinate Geometry Basics",
-              "prerequisite_ids": [],
-              "postrequisite_ids": [],
-              "subtopic": "Parabolas",
-              "concept": "Definition and Properties",
-              "question_number": 1,
-              "difficulty": "easy",
-              "subquestions": [],
-              "code": ""
-            },
-            "Coordinate Geometry Basics_Parabolas_Definition and Properties_2": {
-              "problem": "What is the vertex of a parabola?",
-              "solution": "The vertex of a parabola is the point where the parabola makes its sharpest turn. It is either the minimum point or the maximum point of the parabola, depending on whether the parabola opens upward or downward.",
-              "topic": "Coordinate Geometry Basics",
-              "prerequisite_ids": [],
-              "postrequisite_ids": [],
-              "subtopic": "Parabolas",
-              "concept": "Definition and Properties",
-              "question_number": 2,
-              "difficulty": "easy",
-              "subquestions": [],
-              "code": ""
             }
           }
         }
