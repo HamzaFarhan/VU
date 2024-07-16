@@ -1,186 +1,156 @@
 Topic Number,Topic,Subtopic Number,Subtopic,Learning Outcome Number,Learning Outcome,Question Number,Question,Dependencies
 1,Understanding Sets,,,,,,,
 ,,1,Set Theory Basics,,,,,
-,,,,1,Set Definitions And Notations,,,
+,,,,1,Define and Use Set Notations,,,
 ,,,,,,1,What is the definition of a set in mathematics?,
 ,,,,,,2,What notation is used to denote a set?,
-,,,,2,Set Types,,,
+,,,,2,Identify and Classify Set Types,,,
 ,,,,,,1,What is a finite set?,
 ,,,,,,2,What is an infinite set? Give an example.,
 ,,2,Set Operations,,,,,
-,,,,1,Union and Intersection,,,
+,,,,1,Perform Union and Intersection,,,
 ,,,,,,1,What is the union of two sets A and B?,
 ,,,,,,2,What is the intersection of two sets A and B?,
-,,,,2,Venn Diagrams,,,
+,,,,2,Create and Interpret Venn Diagrams,,,
 ,,,,,,1,What is a Venn diagram?,
 ,,,,,,2,"In a Venn diagram representing sets A and B, what does the overlapping region represent?",1.2.3.2
 2,Complex Numbers Operations,,,,,,,
 ,,1,Complex Number Basics,,,,,
-,,,,1,Definition And Notation,,,
+,,,,1,Define and Use Complex Number Notation,,,
 ,,,,,,1,What is a complex number?,
 ,,,,,,2,What is the imaginary unit denoted by and what is its property?,
-,,,,2,Real and Imaginary Parts,,,
+,,,,2,Identify Real and Imaginary Parts,,,
 ,,,,,,1,"For the complex number z = 3 - 4i, what is the real part?",
 ,,,,,,2,"For the complex number z = 2 + 7i, what is the imaginary part?",
 ,,2,Complex Number Arithmetic,,,,,
-,,,,1,Addition and Subtraction,,,
+,,,,1,Perform Addition and Subtraction,,,
 ,,,,,,1,Calculate (3 + 4i) + (1 - 5i).,
 ,,,,,,2,Calculate (7 - 2i) - (4 + 3i).,
-,,,,2,Multiplication and Division,,,
+,,,,2,Perform Multiplication and Division,,,
 ,,,,,,1,Calculate (2 + 3i) * (1 - i).,
 ,,,,,,2,Calculate (4 - 3i) / (2 + i).,2.4.8.1
 3,Functions And Mappings,,,,,,,
 ,,1,Function Basics,,,,,
-,,,,1,Function Definition,,,
+,,,,1,Define and Identify Functions,,,
 ,,,,,,1,What is a function in mathematics?,
 ,,,,,,2,What is the vertical line test and what does it determine?,
-,,,,2,"Domain, Codomain and Range",,,
-,,,,,,1,What is the domain of a function?,
-,,,,,,2,What is the difference between the codomain and range of a function?,
+,,,,2,"Identify Domain, Codomain and Range",,,
+,,,,,,1,What is the domain of a function?,1.1.1.1
+,,,,,,2,What is the difference between the codomain and range of a function?,1.1.1.1
 ,,2,Types Of Functions,,,,,
-,,,,1,"Injective, Surjective, Bijective",,,
-,,,,,,1,What is an injective (one-to-one) function?,
-,,,,,,2,What is a surjective (onto) function?,
-,,,,2,Even and Odd Functions,,,
+,,,,1,"Classify Injective, Surjective, Bijective Functions",,,
+,,,,,,1,What is an injective (one-to-one) function?,3.5.9.1
+,,,,,,2,What is a surjective (onto) function?,3.5.9.1
+,,,,2,Identify Even and Odd Functions,,,
 ,,,,,,1,What is an even function?,
 ,,,,,,2,What is an odd function?,
 4,Quadratic Functions,,,,,,,
 ,,1,Quadratic Equations,,,,,
-,,,,1,Standard Form,,,
+,,,,1,Identify and Use Standard Form,,,
 ,,,,,,1,What is the standard form of a quadratic equation?,
 ,,,,,,2,"In the standard form of a quadratic equation ax^2 + bx + c = 0, what does the value of a determine about the parabola?",
-,,,,2,Vertex Form,,,
+,,,,2,Identify and Use Vertex Form,,,
 ,,,,,,1,What is the vertex form of a quadratic function?,
-,,,,,,2,"In the vertex form f(x) = a(x - h)^2 + k, what do h and k represent?",4.7.14.1
+,,,,,,2,"In the vertex form f(x) = a(x - h)^2 + k, what do h and k represent?",
 ,,2,Solving Quadratic Equations,,,,,
-,,,,1,Factoring,,,
-,,,,,,1,What is the first step in solving a quadratic equation by factoring?,
+,,,,1,Apply Factoring Method,,,
+,,,,,,1,What is the first step in solving a quadratic equation by factoring?,4.7.13.1
 ,,,,,,2,"After factoring a quadratic equation, how do you find the solutions?",4.8.15.1
-,,,,2,Quadratic Formula,,,
-,,,,,,1,What is the quadratic formula?,
-,,,,,,2,Under what condition does a quadratic equation have no real solutions?,
+,,,,2,Apply Quadratic Formula,,,
+,,,,,,1,What is the quadratic formula?,4.7.13.1
+,,,,,,2,Under what condition does a quadratic equation have no real solutions?,4.7.13.1
 5,Matrix Operations And Applications,,,,,,,
 ,,1,Matrix Basics,,,,,
-,,,,1,Definition and Notation,,,
+,,,,1,Define and Use Matrix Notation,,,
 ,,,,,,1,What is a matrix?,
 ,,,,,,2,How is the size of a matrix described?,
-,,,,2,Types of Matrices,,,
+,,,,2,Identify Types of Matrices,,,
 ,,,,,,1,What is a square matrix?,
-,,,,,,2,What is an identity matrix?,5.9.18.1
+,,,,,,2,What is an identity matrix?,
 ,,2,Matrix Operations,,,,,
-,,,,1,Addition and Subtraction,,,
+,,,,1,Perform Addition and Subtraction,,,
 ,,,,,,1,Under what condition can two matrices be added or subtracted?,
-,,,,,,2,How do you add or subtract two matrices?,5.10.7.1
-,,,,2,Multiplication,,,
+,,,,,,2,How do you add or subtract two matrices?,
+,,,,2,Perform Matrix Multiplication,,,
 ,,,,,,1,What is the condition for matrix multiplication?,
-,,,,,,2,What are the dimensions of the product matrix AB?,5.10.20.1
+,,,,,,2,What are the dimensions of the product matrix AB?,
 6,Sequences And Series,,,,,,,
 ,,1,Sequences,,,,,
-,,,,1,Definition and Notation,,,
+,,,,1,Define and Use Sequence Notation,,,
 ,,,,,,1,What is a sequence in mathematics?,
 ,,,,,,2,What is the difference between a finite and an infinite sequence?,
-,,,,2,Arithmetic and Geometric Sequences,,,
+,,,,2,Identify Arithmetic and Geometric Sequences,,,
 ,,,,,,1,What is an arithmetic sequence?,
 ,,,,,,2,What is a geometric sequence?,
 ,,2,Series,,,,,
-,,,,1,Definition and Notation,,,
-,,,,,,1,What is a series in mathematics?,
-,,,,,,2,What is a partial sum of a series?,6.12.17.1
-,,,,2,Arithmetic and Geometric Series,,,
-,,,,,,1,What is the formula for the sum of the first n terms of an arithmetic series?,
-,,,,,,2,What is the formula for the sum of the first n terms of a geometric series?,6.12.24.1
+,,,,1,Define and Use Series Notation,,,
+,,,,,,1,What is a series in mathematics?,6.11.21.1
+,,,,,,2,What is a partial sum of a series?,"6.11.21.1, 6.12.23.1"
+,,,,2,Calculate Arithmetic and Geometric Series,,,
+,,,,,,1,What is the formula for the sum of the first n terms of an arithmetic series?,"6.11.22.2, 6.11.22.1"
+,,,,,,2,What is the formula for the sum of the first n terms of a geometric series?,"6.11.22.2, 6.11.22.1, 6.12.24.1"
 7,Permutations And Combinations,,,,,,,
 ,,1,Permutations,,,,,
-,,,,1,Definition and Notation,,,
+,,,,1,Define and Use Permutation Notation,,,
 ,,,,,,1,What is a permutation?,
 ,,,,,,2,What does the notation nPr represent?,
-,,,,2,Formulas,,,
-,,,,,,1,What is the formula for nPr?,
-,,,,,,2,How many ways can 5 people be arranged in a line?,7.13.26.1
+,,,,2,Calculate Permutations,,,
+,,,,,,1,What is the formula for nPr?,7.13.25.1
+,,,,,,2,How many ways can 5 people be arranged in a line?,"7.13.26.1, 7.13.25.1"
 ,,2,Combinations,,,,,
-,,,,1,Definition and Notation,,,
+,,,,1,Define and Use Combination Notation,,,
 ,,,,,,1,What is a combination?,
 ,,,,,,2,What does the notation nCr represent?,
-,,,,2,Formulas,,,
-,,,,,,1,What is the formula for nCr?,
-,,,,,,2,In how many ways can a committee of 3 be chosen from a group of 10 people?,7.14.26.1
+,,,,2,Calculate Combinations,,,
+,,,,,,1,What is the formula for nCr?,"7.14.27.1, 7.13.26.2"
+,,,,,,2,In how many ways can a committee of 3 be chosen from a group of 10 people?,"7.14.27.1, 7.13.26.2, 7.14.28.1"
 8,Binomial Theorem Applications,,,,,,,
 ,,1,Binomial Expansion,,,,,
-,,,,1,Binomial Theorem,,,
+,,,,1,Apply Binomial Theorem,,,
 ,,,,,,1,What is the Binomial Theorem?,
 ,,,,,,2,What is the exponent of a and b in the (r+1)th term of the expansion (a + b)^n?,8.15.29.1
 ,,2,Binomial Coefficients,,,,,
-,,,,1,Definition and Notation,,,
-,,,,,,1,What is a binomial coefficient?,
-,,,,,,2,What does the notation (n choose r) represent?,8.16.17.1
-,,,,2,Properties,,,
-,,,,,,1,What is the value of nC0?,
-,,,,,,2,What is the relationship between nCr and nC(n-r)?,
+,,,,1,Define and Use Binomial Coefficient Notation,,,
+,,,,,,1,What is a binomial coefficient?,7.14.27.1
+,,,,,,2,What does the notation (n choose r) represent?,"7.14.27.1, 8.16.30.1"
+,,,,2,Apply Properties of Binomial Coefficients,,,
+,,,,,,1,What is the value of nC0?,7.14.28.1
+,,,,,,2,What is the relationship between nCr and nC(n-r)?,7.14.28.1
 9,Coordinate Geometry Basics,,,,,,,
 ,,1,Cartesian Coordinate System,,,,,
-,,,,1,Axes and Quadrants,,,
+,,,,1,Identify Axes and Quadrants,,,
 ,,,,,,1,What are the two axes in a Cartesian coordinate system?,
 ,,,,,,2,How many quadrants does the Cartesian coordinate system have?,
-,,,,2,Points and Coordinates,,,
+,,,,2,Plot Points and Interpret Coordinates,,,
 ,,,,,,1,How is a point represented in the Cartesian coordinate system?,
 ,,,,,,2,What are the coordinates of the origin?,9.17.33.1
 ,,2,Lines,,,,,
-,,,,1,Slope,,,
+,,,,1,Calculate Slope,,,
 ,,,,,,1,What does the slope of a line represent?,
 ,,,,,,2,"How do you calculate the slope between two points (x1, y1) and (x2, y2)?",9.18.34.1
-,,,,2,Equation of a Line,,,
-,,,,,,1,What is the slope-intercept form of a line?,
-,,,,,,2,What is the point-slope form of a line?,
+,,,,2,Write Equation of a Line,,,
+,,,,,,1,What is the slope-intercept form of a line?,9.18.34.1
+,,,,,,2,What is the point-slope form of a line?,9.18.34.1
 10,Circle And Equations,,,,,,,
 ,,1,Equation of a Circle,,,,,
-,,,,1,Standard Form,,,
-,,,,,,1,What is the standard form of the equation of a circle?,
-,,,,,,2,"What is the equation of a circle with center (2, -3) and radius 5?",10.19.13.1
-,,,,2,General Form,,,
-,,,,,,1,What is the general form of the equation of a circle?,
-,,,,,,2,How can you find the center and radius of a circle from its general form equation?,10.19.37.1
+,,,,1,Write Standard Form Equation,,,
+,,,,,,1,What is the standard form of the equation of a circle?,9.17.33.1
+,,,,,,2,"What is the equation of a circle with center (2, -3) and radius 5?","9.17.33.1, 10.19.36.1"
+,,,,2,Write General Form Equation,,,
+,,,,,,1,What is the general form of the equation of a circle?,10.19.36.1
+,,,,,,2,How can you find the center and radius of a circle from its general form equation?,"10.19.37.1, 10.19.36.1"
 11,Trigonometric Functions,,,,,,,
 ,,1,Basic Trigonometric Ratios,,,,,
-,,,,1,"Sine, Cosine, Tangent",,,
+,,,,1,"Calculate Sine, Cosine, Tangent",,,
 ,,,,,,1,"In a right-angled triangle, what is the sine of an angle?",
 ,,,,,,2,"In a right-angled triangle, what is the cosine of an angle?",
-,,,,2,Reciprocal Ratios,,,
-,,,,,,1,What is the reciprocal of sine?,
-,,,,,,2,What is the reciprocal of cosine?,
+,,,,2,Calculate Reciprocal Ratios,,,
+,,,,,,1,What is the reciprocal of sine?,"11.20.38.2, 11.20.38.1"
+,,,,,,2,What is the reciprocal of cosine?,"11.20.38.2, 11.20.38.1"
 ,,2,Trigonometric Identities,,,,,
-,,,,1,Pythagorean Identities,,,
+,,,,1,Apply Pythagorean Identities,,,
 ,,,,,,1,What is the Pythagorean identity relating sine and cosine?,
 ,,,,,,2,What is the Pythagorean identity relating tangent and secant?,
-,,,,2,Sum and Difference Identities,,,
+,,,,2,Apply Sum and Difference Identities,,,
 ,,,,,,1,What is the sum identity for sine?,
 ,,,,,,2,What is the difference identity for cosine?,
-12,Introduction To Statistics,,,,,,,
-,,1,Basic Concepts,,,,,
-,,,,1,Population and Sample,,,
-,,,,,,1,What is a population in statistics?,
-,,,,,,2,What is a sample in statistics?,
-,,,,2,Variables and Data Types,,,
-,,,,,,1,What is a variable in statistics?,
-,,,,,,2,What are the two main types of variables in statistics?,12.22.43.1
-,,2,Data Representation,,,,,
-,,,,1,Frequency Tables,,,
-,,,,,,1,What is a frequency table?,
-,,,,,,2,What is a relative frequency table?,12.23.44.1
-,,,,2,Graphical Representations,,,
-,,,,,,1,What are some common graphical representations of data?,
-,,,,,,2,What type of data are bar graphs best suited for?,12.23.45.1
-13,Data Representation & Analysis,,,,,,,
-,,1,Data Types,,,,,
-,,,,1,Quantitative Data,,,
-,,,,,,1,What is quantitative data?,
-,,,,,,2,What is the difference between discrete and continuous quantitative data?,13.24.46.1
-,,,,2,Qualitative Data,,,
-,,,,,,1,What is qualitative data?,
-,,,,,,2,What are the two main types of qualitative data?,13.24.47.1
-,,2,Graphical Representations,,,,,
-,,,,1,Histograms,,,
-,,,,,,1,What is a histogram?,
-,,,,,,2,What type of data are histograms used for?,13.25.48.1
-,,,,2,Box Plots,,,
-,,,,,,1,What is a box plot?,
-,,,,,,2,What information does a box plot provide about a dataset?,13.25.49.1
