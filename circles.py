@@ -1,3 +1,4 @@
+import argparse
 import json
 import math
 
@@ -9,7 +10,6 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 
 from vu_models import Topics
-
 
 TOPICS_FILE = "math_topics_4.json"
 EDGE_COLOR = "purple"
@@ -287,31 +287,31 @@ def create_topics_subtopics_network_graph(
     return fig
 
 
-topics = Topics(**json.load(open(TOPICS_FILE)))
-# print(f"subtopics: {topics.subtopics.keys()}")
-app = dash.Dash(__name__)
-selected_topic = "All Topics"
-options = [
-    {"label": "All Topics", "value": "All Topics"},
-    {"label": "All Subtopics", "value": "All Subtopics"},
-]
-app.layout = html.Div(
-    [
-        html.H1(""),
-        dcc.Dropdown(
-            id="topic-dropdown",
-            options=options,
-            value="All Topics",
-        ),
-        dcc.Graph(
-            id="topic-dependencies-graph",
-            figure=create_topics_subtopics_network_graph(
-                topics=topics, selected="All Subtopics"
-            ),
-        ),
-    ],
-    style={"textAlign": "top", "width": "60%", "margin": "auto"},
-)
+# topics = Topics(**json.load(open(TOPICS_FILE)))
+# # print(f"subtopics: {topics.subtopics.keys()}")
+# app = dash.Dash(__name__)
+# selected_topic = "All Topics"
+# options = [
+#     {"label": "All Topics", "value": "All Topics"},
+#     {"label": "All Subtopics", "value": "All Subtopics"},
+# ]
+# app.layout = html.Div(
+#     [
+#         html.H1(""),
+#         dcc.Dropdown(
+#             id="topic-dropdown",
+#             options=options,
+#             value="All Topics",
+#         ),
+#         dcc.Graph(
+#             id="topic-dependencies-graph",
+#             figure=create_topics_subtopics_network_graph(
+#                 topics=topics, selected="All Subtopics"
+#             ),
+#         ),
+#     ],
+#     style={"textAlign": "top", "width": "60%", "margin": "auto"},
+# )
 
 
 def update_dropdown_value(click_data, dropdown_options):
@@ -361,23 +361,62 @@ def update_dropdown_value(click_data, dropdown_options):
     return dash.no_update
 
 
-# Callback to handle the click events and update the figure
+def create_app(topics_file: str):
+    topics = Topics(**json.load(open(topics_file)))
+    app = dash.Dash(__name__)
+
+    options = [
+        {"label": "All Topics", "value": "All Topics"},
+        {"label": "All Subtopics", "value": "All Subtopics"},
+    ]
+
+    app.layout = html.Div(
+        [
+            html.H1(""),
+            dcc.Dropdown(
+                id="topic-dropdown",
+                options=options,
+                value="All Topics",
+            ),
+            dcc.Graph(
+                id="topic-dependencies-graph",
+                figure=create_topics_subtopics_network_graph(
+                    topics=topics, selected="All Subtopics"
+                ),
+            ),
+        ],
+        style={"textAlign": "top", "width": "60%", "margin": "auto"},
+    )
+
+    @app.callback(
+        Output("topic-dependencies-graph", "figure"),
+        [Input("topic-dropdown", "value")],
+    )
+    def update_graph(selected):
+        fig = create_topics_subtopics_network_graph(topics=topics, selected=selected)
+        return fig
+
+    return app
 
 
-@app.callback(
-    Output("topic-dependencies-graph", "figure"),
-    [Input("topic-dropdown", "value")],
-    # [State("topic-dropdown", "options")],
-)
-def update_graph(selected):
-    # if click_data:
-    #     print(f"Click data: {click_data}")
-    #     print(f"Dropdown options: {dropdown_options}")
-    #     print(f"Selected: {selected}")
-    fig = create_topics_subtopics_network_graph(topics=topics, selected=selected)
+def main():
+    parser = argparse.ArgumentParser(
+        description="Run the dashboard with specified topics file and port."
+    )
+    parser.add_argument("-f", "--topics_file", help="Path to the topics JSON file")
+    parser.add_argument(
+        "-p",
+        "--port",
+        type=int,
+        default=8050,
+        help="Port to run the Dash app on (default: 8050)",
+    )
 
-    return fig
+    args = parser.parse_args()
+
+    app = create_app(args.topics_file)
+    app.run_server(port=args.port)
 
 
 if __name__ == "__main__":
-    app.run_server()
+    main()

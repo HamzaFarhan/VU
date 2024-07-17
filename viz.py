@@ -1,3 +1,4 @@
+import argparse
 import json
 
 import dash
@@ -8,7 +9,6 @@ from dash.dependencies import Input, Output, State
 
 from vu_models import Topics
 
-TOPICS_FILE = "math_topics_4.json"
 PREREQ_COLOR = "purple"
 
 
@@ -205,64 +205,79 @@ def create_graph_visualization(topics: Topics, selected_node=None):
     return fig, G, pos, node_indices
 
 
-dummy_topics = Topics(**json.load(open(TOPICS_FILE)))
+def create_app(topics_file: str):
+    topics = Topics(**json.load(open(topics_file)))
+    initial_fig, G, pos, node_indices = create_graph_visualization(topics)
 
-initial_fig, G, pos, node_indices = create_graph_visualization(dummy_topics)
+    app = dash.Dash(__name__)
 
-app = dash.Dash(__name__)
-
-app.layout = html.Div(
-    [
-        dcc.Graph(id="topic-graph", figure=initial_fig),
-        dcc.Store(
-            id="graph-data",
-            data={
-                "pos": pos,
-                "node_indices": node_indices,
-                "selected_node": None,
-            },
-        ),
-    ]
-)
-
-
-@app.callback(
-    Output("topic-graph", "figure"),
-    Output("graph-data", "data"),
-    Input("topic-graph", "clickData"),
-    State("graph-data", "data"),
-)
-def update_graph(clickData, graph_data):
-    node_indices = graph_data["node_indices"]
-    selected_node = graph_data["selected_node"]
-
-    if clickData:
-        # print(f"CLICK DATA = {clickData}")
-        point = clickData["points"][0]
-        point_index = str(point["text"])
-        # print(f"Node indices: {node_indices}")
-        try:
-            clicked_node = node_indices[point_index]
-            # print(f'CLICKED NODE = {clicked_node}, SELECTED NODE = {selected_node}')
-            if clicked_node == selected_node:
-                selected_node = None
-            else:
-                selected_node = clicked_node
-            # print(f'FINAL SELECTED NODE = {selected_node}')
-        except KeyError:
-            print(f"KeyError: Unable to find node for point_index: {point_index}")
-            print("Available indices:", list(node_indices.keys()))
-    # print('UPDATING FIGURE')
-    updated_fig, _, new_pos, new_node_indices = create_graph_visualization(
-        dummy_topics, selected_node
+    app.layout = html.Div(
+        [
+            dcc.Graph(id="topic-graph", figure=initial_fig),
+            dcc.Store(
+                id="graph-data",
+                data={
+                    "pos": pos,
+                    "node_indices": node_indices,
+                    "selected_node": None,
+                },
+            ),
+        ]
     )
-    # print(f'New Pos = {new_pos}, New Node Indices = {new_node_indices}, selected node = {selected_node}')
-    return updated_fig, {
-        "pos": new_pos,
-        "node_indices": new_node_indices,
-        "selected_node": selected_node,
-    }
+
+    @app.callback(
+        Output("topic-graph", "figure"),
+        Output("graph-data", "data"),
+        Input("topic-graph", "clickData"),
+        State("graph-data", "data"),
+    )
+    def update_graph(clickData, graph_data):
+        node_indices = graph_data["node_indices"]
+        selected_node = graph_data["selected_node"]
+
+        if clickData:
+            point = clickData["points"][0]
+            point_index = str(point["text"])
+            try:
+                clicked_node = node_indices[point_index]
+                if clicked_node == selected_node:
+                    selected_node = None
+                else:
+                    selected_node = clicked_node
+            except KeyError:
+                print(f"KeyError: Unable to find node for point_index: {point_index}")
+                print("Available indices:", list(node_indices.keys()))
+
+        updated_fig, _, new_pos, new_node_indices = create_graph_visualization(
+            topics, selected_node
+        )
+        return updated_fig, {
+            "pos": new_pos,
+            "node_indices": new_node_indices,
+            "selected_node": selected_node,
+        }
+
+    return app
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Run the topic visualization dashboard."
+    )
+    parser.add_argument("-f", "--topics_file", help="Path to the topics JSON file")
+    parser.add_argument(
+        "-p",
+        "--port",
+        type=int,
+        default=8051,
+        help="Port to run the Dash app on (default: 8051)",
+    )
+
+    args = parser.parse_args()
+
+    app = create_app(args.topics_file)
+    app.run_server(debug=True, port=args.port)
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=8051)
+    main()
