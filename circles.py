@@ -403,7 +403,12 @@ def main():
     parser = argparse.ArgumentParser(
         description="Run the dashboard with specified topics file and port."
     )
-    parser.add_argument("-f", "--topics_file", help="Path to the topics JSON file")
+    parser.add_argument(
+        "-f",
+        "--topics_file",
+        default="math_topics_4.json",
+        help="Path to the topics JSON file",
+    )
     parser.add_argument(
         "-p",
         "--port",

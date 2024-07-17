@@ -264,7 +264,12 @@ def main():
     parser = argparse.ArgumentParser(
         description="Run the topic visualization dashboard."
     )
-    parser.add_argument("-f", "--topics_file", help="Path to the topics JSON file")
+    parser.add_argument(
+        "-f",
+        "--topics_file",
+        default="math_topics_4.json",
+        help="Path to the topics JSON file",
+    )
     parser.add_argument(
         "-p",
         "--port",
