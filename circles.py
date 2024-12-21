@@ -12,7 +12,7 @@ from dash.dependencies import Input, Output
 from vu_models import Topics
 
 TOPICS_FILE = "math_topics_4.json"
-EDGE_COLOR = "purple"
+EDGE_COLOR = "black"
 
 
 def find_points_on_line(
@@ -44,9 +44,7 @@ def calculate_subtopic_positions(
     return subtopic_positions
 
 
-def create_arrowhead_list(
-    graph: nx.Graph, pos: dict, selected_node: str, node_radius_scaled: float
-) -> list[dict]:
+def create_arrowhead_list(graph: nx.Graph, pos: dict, selected_node: str, node_radius_scaled: float) -> list[dict]:
     arrowhead_list = []
     edge_x = []
     edge_y = []
@@ -121,9 +119,7 @@ def create_arrowhead_list(
     return arrowhead_list
 
 
-def create_topics_subtopics_network_graph(
-    topics: Topics, selected: str = ""
-) -> go.Figure:
+def create_topics_subtopics_network_graph(topics: Topics, selected: str = "") -> go.Figure:
     topic_node_size = 180
     subtopic_node_size = 40
     topics_graph = nx.DiGraph()
@@ -150,30 +146,22 @@ def create_topics_subtopics_network_graph(
         for prereq_id in topic.prerequisite_ids:
             if prereq_id.count("_") > 0:
                 continue
-            topics_graph.add_edge(
-                prereq_id, topic_id, type="prereq", color=EDGE_COLOR, arrow=True
-            )
+            topics_graph.add_edge(prereq_id, topic_id, type="prereq", color=EDGE_COLOR, arrow=True)
     for subtopic_id, subtopic in topics.subtopics.items():
         for prereq_id in subtopic.prerequisite_ids:
             if prereq_id.count("_") > 1:
                 continue
-            subtopics_graph.add_edge(
-                prereq_id, subtopic_id, type="prereq", color=EDGE_COLOR, arrow=True
-            )
+            subtopics_graph.add_edge(prereq_id, subtopic_id, type="prereq", color=EDGE_COLOR, arrow=True)
     topic_positions = nx.circular_layout(topics_graph)
-    subtopic_positions = calculate_subtopic_positions(
-        topics=topics, topic_positions=topic_positions
-    )
+    subtopic_positions = calculate_subtopic_positions(topics=topics, topic_positions=topic_positions)
     all_positions = {**topic_positions, **subtopic_positions}
     height = 1000
     width = 1000
     x_range = (
-        max(all_positions.values(), key=lambda x: x[0])[0]
-        - min(all_positions.values(), key=lambda x: x[0])[0]
+        max(all_positions.values(), key=lambda x: x[0])[0] - min(all_positions.values(), key=lambda x: x[0])[0]
     )
     y_range = (
-        max(all_positions.values(), key=lambda x: x[1])[1]
-        - min(all_positions.values(), key=lambda x: x[1])[1]
+        max(all_positions.values(), key=lambda x: x[1])[1] - min(all_positions.values(), key=lambda x: x[1])[1]
     )
     x_scale = width / x_range
     y_scale = height / y_range
@@ -224,13 +212,9 @@ def create_topics_subtopics_network_graph(
             symbol="circle-open",
         ),
     )
-    arrowhead_trace = go.Scatter(
-        x=[], y=[], mode="markers", hoverinfo="none", showlegend=False
-    )
+    arrowhead_trace = go.Scatter(x=[], y=[], mode="markers", hoverinfo="none", showlegend=False)
     if selected == "All Topics":
-        arrowhead_topics_list = create_arrowhead_list(
-            topics_graph, pos, selected, node_radius_topics_scaled
-        )
+        arrowhead_topics_list = create_arrowhead_list(topics_graph, pos, selected, node_radius_topics_scaled)
         fig = go.Figure(
             data=[arrowhead_trace, node_trace_topics, node_trace_subtopics],
             layout=go.Layout(
@@ -281,9 +265,7 @@ def create_topics_subtopics_network_graph(
         )
         fig.update_layout(annotations=arrowhead_subtopics_list)
     fig.update_traces(textposition="top center")
-    fig.update_layout(
-        title="Topics", title_x=0.5, hovermode="closest", showlegend=False
-    )
+    fig.update_layout(title="Topics", title_x=0.5, hovermode="closest", showlegend=False)
     return fig
 
 
@@ -319,11 +301,7 @@ def update_dropdown_value(click_data, dropdown_options):
     if click_data:
         print("In update_dropdown_value; click_data: ", click_data)
     print("dropdown_options: ", dropdown_options)
-    if (
-        click_data is not None
-        and "points" in click_data
-        and len(click_data["points"]) > 0
-    ):
+    if click_data is not None and "points" in click_data and len(click_data["points"]) > 0:
         # Check if the click is on a small blue circle (subtopic)
         if click_data["points"][0]["curveNumber"] == 6:
             # Safely access the 'customdata' value using the .get() method
@@ -332,11 +310,7 @@ def update_dropdown_value(click_data, dropdown_options):
             if customdata is not None:
                 # Check if customdata matches any of the dropdown values
                 selected_value = next(
-                    (
-                        option["value"]
-                        for option in dropdown_options
-                        if option["value"] == customdata
-                    ),
+                    (option["value"] for option in dropdown_options if option["value"] == customdata),
                     None,
                 )
                 if selected_value is not None:
@@ -347,11 +321,7 @@ def update_dropdown_value(click_data, dropdown_options):
         if clicked_label is not None:
             # Check if clicked_label matches any of the dropdown values
             selected_value = next(
-                (
-                    option["value"]
-                    for option in dropdown_options
-                    if option["label"] == clicked_label
-                ),
+                (option["value"] for option in dropdown_options if option["label"] == clicked_label),
                 None,
             )
             if selected_value is not None:
@@ -380,9 +350,7 @@ def create_app(topics_file: str):
             ),
             dcc.Graph(
                 id="topic-dependencies-graph",
-                figure=create_topics_subtopics_network_graph(
-                    topics=topics, selected="All Subtopics"
-                ),
+                figure=create_topics_subtopics_network_graph(topics=topics, selected="All Subtopics"),
             ),
         ],
         style={"textAlign": "top", "width": "60%", "margin": "auto"},
@@ -400,9 +368,7 @@ def create_app(topics_file: str):
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Run the dashboard with specified topics file and port."
-    )
+    parser = argparse.ArgumentParser(description="Run the dashboard with specified topics file and port.")
     parser.add_argument(
         "-f",
         "--topics_file",
